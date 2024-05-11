@@ -1,15 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karmelo's WDWCS Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>Yo Wassuh</h1>
-        <nav></nav>
-    </header>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti numquam nesciunt reiciendis sint provident fugit iure, sunt praesentium ab nam aperiam eveniet quisquam fuga explicabo optio dolorum accusamus molestias amet.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    
+    <nav id="desktop-nav">
+      <div class="logo">Melo Cortes</div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Melo Cortes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="profile-pic.png" alt=" profile picture" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Melo Cortes</h1>
+        <p class="section__text__p2">Business Processes Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img
+            src="facebook.png"
+            alt="My Facebook profile"
+            class="icon1"
+            onclick="location.href='https://Facebook.com/klcrtss'"
+            />
+            <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Melow04'"
+            />
+        </div>
+    </div>
+</section>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+         
+        </div>
+        <h2 class="experience-sub-title project-title">Technical Summative 1</h2>
+        <h4>Tables and Forms</h4>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+        
+        </div>
+      </div>
+     <!-- <div class="details-container color-container">
+        <div class="article-container">
+
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+        
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+         
+        </div>
+      </div>-->
+    </div>
+  </div>
+  <img
+    src="arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#about'"
+  />
+</section>
+
+
+<section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+        
+            <div class="details-container">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p>Currently taking </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Driven by a desire to make a positive impact, I am Karmelo Andrei L. Cortes, a Bachelor of Science in Information Technology student with a specialization in Business Analytics at FEU Institute of Technology. Beyond academics, I'm actively seeking opportunities to apply my skills. My ultimate goal is to become a driving force for innovation and positive change. I believe technology can solve problems and create a better future, and I am eager to contribute.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+      src="arrow.png"
+      alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+   
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:202310960@fit.edu.ph">202310960@fit.edu.ph</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="facebook.png"
+            alt="Facebook icon"
+            class="icon contact-icon"/>
+          <p><a href="https://www.facebook.com">Facebook</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Karmelo Andrei Cortes. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
