@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <title>Employee Registration</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Employee Registration Form</h1>
+        <form action="">
+            <h3>Personal Information</h3>
+            <hr />
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="middlename">Middle Name</label>
+                    <input type="text" class="form-control" id="middlename" name="middlename"
+                        placeholder="Middle Name" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="gender">Gender</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male" />
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female" />
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="religion">Religion</label>
+                    <input type="text" class="form-control" id="religion" name="religion" placeholder="Religion" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="emergencynumber">Emergency Number</label>
+                    <input type="tel" class="form-control" id="emergencynumber" name="emergencynumber"
+                        placeholder="Emergency Contact Number" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="emergency">Emergency Contact</label>
+                    <input type="text" class="form-control" id="emergency" name="emergency"
+                        placeholder="Emergency Contact Name" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="citizenship">Citizenship</label>
+                    <input type="text" class="form-control" id="citizenship" name="citizenship"
+                        placeholder="Citizenship" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="street">Street Address</label>
+                <input type="text" class="form-control" id="street" name="street" placeholder="Street Address"
+                    required />
+                <input type="text" class="form-control mt-2" id="address" name="address"
+                    placeholder="Street Address 2" />
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City" required />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Enter State"
+                        required />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="post-code">Postal ID</label>
+                    <input type="number" class="form-control" id="post-code" name="post-code"
+                        placeholder="Enter Postal ID" required />
+                </div>
+            </div>
+            <h3>Educational Background</h3>
+            <hr />
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="course">Course</label>
+                    <input type="text" class="form-control" id="course" name="course" placeholder="Enter Course Taken"
+                        required />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="school">School</label>
+                    <input type="text" class="form-control" id="school" name="school" placeholder="Enter School"
+                        required />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="start-date">Date Started</label>
+                    <input type="date" class="form-control" id="start-date" name="start-date" required />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="end-date">Date Ended</label>
+                    <input type="date" class="form-control" id="end-date" name="end-date" required />
+                </div>
+            </div>
+            <h3>Skills/Qualifications</h3>
+            <hr />
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea class="form-control" name="skills" id="skills" cols="50" rows="5"
+                    placeholder="List any relevant skills"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="qualifications">Qualifications</label>
+                <textarea class="form-control" name="qualifications" id="qualifications" cols="50" rows="5"
+                    placeholder="List any relevant certifications or qualifications"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="position">Position you prefer</label>
+                    <input type="text" class="form-control" id="position" name="position"
+                        placeholder="Preferred Position" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="desired-sal">Desired Salary</label>
+                    <input type="text" class="form-control" id="desired-sal" name="desired-sal"
+                        placeholder="Desired Salary" />
+                </div>
+            </div>
+            <h3>References</h3>
+            <hr>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="reference1_name">Name</label>
+                    <input type="text" class="form-control" id="reference1_name" name="reference1_name"
+                        placeholder="Reference 1 Name">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference1_relationship">Relationship</label>
+                    <input type="text" class="form-control" id="reference1_relationship" name="reference1_relationship"
+                        placeholder="Reference 1 Relationship">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference1_years">Years Acquainted</label>
+                    <input type="text" class="form-control" id="reference1_years" name="reference1_years"
+                        placeholder="Reference 1 Years Acquainted">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference1_phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="reference1_phone" name="reference1_phone"
+                        placeholder="Reference 1 Phone Number">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference1_email">Email Address</label>
+                    <input type="email" class="form-control" id="reference1_email" name="reference1_email"
+                        placeholder="Reference 1 Email Address">
+                </div>
+            </div>
+            <hr>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="reference2_name">Name</label>
+                    <input type="text" class="form-control" id="reference2_name" name="reference2_name"
+                        placeholder="Reference 2 Name">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference2_relationship">Relationship</label>
+                    <input type="text" class="form-control" id="reference2_relationship" name="reference2_relationship"
+                        placeholder="Reference 2 Relationship">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference2_years">Years Acquainted</label>
+                    <input type="text" class="form-control" id="reference2_years" name="reference2_years"
+                        placeholder="Reference 2 Years Acquainted">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference2_phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="reference2_phone" name="reference2_phone"
+                        placeholder="Reference 2 Phone Number">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference2_email">Email Address</label>
+                    <input type="email" class="form-control" id="reference2_email" name="reference2_email"
+                        placeholder="Reference 2 Email Address">
+                </div>
+            </div>
+            <hr>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="reference3_name">Name</label>
+                    <input type="text" class="form-control" id="reference3_name" name="reference3_name"
+                        placeholder="Reference 3 Name">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference3_relationship">Relationship</label>
+                    <input type="text" class="form-control" id="reference3_relationship" name="reference3_relationship"
+                        placeholder="Reference 3 Relationship">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference3_years">Years Acquainted</label>
+                    <input type="text" class="form-control" id="reference3_years" name="reference3_years"
+                        placeholder="Reference 3 Years Acquainted">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference3_phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="reference3_phone" name="reference3_phone"
+                        placeholder="Reference 3 Phone Number">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="reference3_email">Email Address</label>
+                    <input type="email" class="form-control" id="reference3_email" name="reference3_email"
+                        placeholder="Reference 3 Email Address">
+                </div>
+            </div>
+            <hr>
+            <h3>Cover Letter & Resume</h3>
+            <hr>
+            <div class="form-group">
+                <label for="cl">Cover Letter Upload</label>
+                <input type="file" class="form-control-file" id="cl" name="cl" />
+            </div>
+            <div class="form-group">
+                <label for="cv">Resume Upload</label>
+                <input type="file" class="form-control-file" id="cv" name="cv" />
+            </div>
+            <div class="form-group">
+                <label for="application">Application Agreement</label>
+                <p class="text-justify">I, [Applicant's Name], hereby consent to the collection, use, and disclosure of my personal
+                    information provided in this Labor Application Form for the purposes of evaluating my candidacy for
+                    employment opportunities with [Company Name].
+
+                    I understand that the personal information collected on this form, including but not limited to my
+                    name, contact details, educational background, work experience, and any other information provided,
+                    will be used by [Company Name] for the following purposes:
+
+                    Reviewing and assessing my qualifications, skills, and suitability for employment.
+                    Contacting me regarding potential job opportunities, interviews, and employment-related matters.
+                    Verifying the accuracy and completeness of the information provided.
+                    Communicating with third-party references, educational institutions, and previous employers for the
+                    purpose of conducting background checks and verifying employment history.
+                    Complying with legal and regulatory requirements related to the recruitment and employment process.
+                    I acknowledge that the personal information provided in this form will be handled in accordance with
+                    applicable privacy laws and [Company Name]'s privacy policy. I understand that my personal
+                    information may be stored, processed, and accessed by authorized personnel involved in the
+                    recruitment and hiring process.
+
+                    I further consent to [Company Name] retaining my personal information for a reasonable period
+                    following the completion of the recruitment process for future employment opportunities, unless I
+                    withdraw my consent or request the deletion of my information.
+
+                    I understand that providing consent is voluntary, and I have the right to withdraw my consent at any
+                    time by contacting [Company Name]'s Human Resources department.
+
+                    By signing below, I confirm that I have read, understood, and consent to the collection, use, and
+                    disclosure of my personal information as described above.</p>
+            </div>
+            <div class="form-group">
+                <label for="sn">Signature Upload</label>
+                <input type="file" class="form-control-file" id="sn" name="sn" />
+            </div>
+            <div class="form-group position-absolute bottom-50 end-50">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

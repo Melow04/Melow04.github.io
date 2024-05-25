@@ -36,6 +36,7 @@ h1 {
 
 .flex-container{
     display: flex;
+    margin: auto;
 }
 
 .form-control label {
