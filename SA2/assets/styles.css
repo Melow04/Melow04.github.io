@@ -93,11 +93,12 @@ a:hover {
 .profile-img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #000;
+  border: 2px transparent;
   border-radius: 50%;
 }
 
 .contact-info {
+margin-top: 15px;
   margin-left: 10px;
 }
 
