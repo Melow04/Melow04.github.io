@@ -13,29 +13,35 @@ body {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-      
 }
 
-
-
-
-.header-container{
+.header-container {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
   color: #313030;
-  padding: 20px;
+  padding: 20px 20px 0px 20px ;
   border-width: 1px;
   border-radius: 8px;
-  margin-bottom: 20px;
   align-items: center;
   border-style: solid;
   text-align: center;
 }
 
 .header-container img{
-    width: 150px;
+    width: 160px;
     height: auto;
     padding-bottom: 0px;
+    margin: 0%;
 }
 
 .header-container h1{
-    font-size: 50px;
+    font-size: 100px;
+    margin: 0%;
 }
+
+.header-container h4{
+  margin: 0%;
+}
+
+profi
