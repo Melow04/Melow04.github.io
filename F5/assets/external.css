@@ -16,22 +16,30 @@ body {
 }
 
 .header-container {
-  font-family: "Satisfy", cursive;
-  font-weight: 400;
-  font-style: normal;
-  padding: 20px 20px 0px 20px ;
-  border: 1px solid #313030;
-  border-radius: 8px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0px 20px 0px 20px ;
+  /* border: 1px solid #313030; */
+  box-shadow: 0 0 10px rgba(87, 85, 85, 0.363);
+  border-radius: 30px;
   align-items: center;
   text-align: center;
   margin: 20px;
 }
 
-.header-container img{
+.profile-img{
     width: 160px;
     height: auto;
     padding-bottom: 0px;
     margin: 0%;
+}
+
+.profile-img:hover{
+content: url(hover.png);
+width: 160px;
+height: auto;
 }
 
 .header-container h1{
@@ -45,12 +53,41 @@ body {
 }
 
 .profile-section{
-  border: 1px solid #313030;
-  border-radius: 8px;
+  /* border: 1px solid #313030; */
+  box-shadow: 0 0 10px rgba(61, 60, 60, 0.247);
+  border-radius: 20px;
   padding: 10px;
 }
 
-.profile-section p{
+.profile-section h3{
+  margin: 5px;
+}
+
+/* .profile-section p{
+  margin: auto;
+} */
+
+#personal p{
+  margin-left: 5px;
+}
+
+strong{
+  font-style: italic;
+  font-weight: 600;
+  
+}
+
+span{
+  margin-left: 10px;
+  box-shadow: 0 5px 5px rgba(168, 64, 172, 0.096);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #252525;
+  display: block;
+  text-align: right;
+}
+
+#prog-cont p{
   margin: auto;
 }
 
@@ -59,10 +96,25 @@ body {
   margin-right: 10px;
 }
 
+.col-md-6{
+  margin-bottom: 20px;
+}
+
 .progress-bar{
   background-color: #b190d1;
-  border-radius: 10px;
+  border-radius: 30px;
   text-align: center;
   margin-bottom: 10px;
   height: 20px;
+
+ 
+} 
+
+.c-item{
+height: 150px;
+}
+
+.c-img{
+height: 100%;
+object-fit: cover;
 }
