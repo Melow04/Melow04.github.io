@@ -56,7 +56,7 @@ box-shadow: 0 0 10px rgba(240, 121, 9, 0.801);
 }
 
 .clark:hover {
-  background-image: url();
+  background-image: url(clarkcard.jpg);
   background-size: cover;
   box-shadow: 0 0 10px rgba(0, 150, 250, 0.959);
 }
@@ -71,7 +71,7 @@ box-shadow: 0 0 10px rgba(240, 121, 9, 0.801);
   text-decoration: none;
 }
 .sofia:hover {
-  background-image: url();
+  background-image: url(SofiaCard.jpg);
   background-size: cover;
   box-shadow: 0 0 10px rgba(231, 235, 25, 0.959);
 }
