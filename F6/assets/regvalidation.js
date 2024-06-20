@@ -13,7 +13,7 @@ let bdayInput = document.getElementById("birthday");
 let submit = document.getElementById("submit");
 
 function updateFullName(){
-    let fullname = firstname.value +" "+ lastname.value;
+    let fluname = firstname.value +" "+ lastname.value;
 
     document.getElementById("fullname").value = fullname
 }
