@@ -3,12 +3,18 @@ function submitToPage(){
     window.location="https://melow04.github.io/F6/login.html";
 }
 
-
+let firstname = document.getElementById("firstname");
+let lastname = document.getElementById("lastname");
+let fullname = document.getElementById("fullname");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let confpassword = document.getElementById("confpassword");
 let bdayInput = document.getElementById("birthday");
 let submit = document.getElementById("submit");
+
+function updateFullName(){
+    fullname = firstname + " " + lastname;
+}
 
 bdayInput.addEventListener('change',function(){
     let bday = document.getElementById("birthday").value;
