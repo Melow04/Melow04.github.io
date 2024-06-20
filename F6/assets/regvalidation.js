@@ -1,6 +1,6 @@
 
 function submitToPage(){
-    window.location="";
+    window.location="https://melow04.github.io/F6/login.html";
 }
 
 
