@@ -1,0 +1,27 @@
+ body {
+            background-color: white;
+            font-family: "Poppins", sans-serif;
+            text-align: justify;}
+
+
+            .container{
+                margin-top: 2rem;
+            }
+        .regform{
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            padding-top: 20px;
+            box-shadow: 0 0 10px rgba(24, 24, 24, 0.363);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 130px;
+        }
+
+        .empty{
+            border-color: rgb(0, 0, 0);
+        }
+        
+        .button-mouse-over{
+            font-size: larger;
+        }
