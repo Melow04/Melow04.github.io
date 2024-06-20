@@ -13,8 +13,11 @@ let bdayInput = document.getElementById("birthday");
 let submit = document.getElementById("submit");
 
 function updateFullName(){
-    fullname = firstname + " " + lastname;
+    fullname.value = firstname.value + " " + lastname.value;
 }
+
+firstname.addEventListener('input',updateFullName);
+lastname.addEventListener('input', updateFullName);
 
 bdayInput.addEventListener('change',function(){
     let bday = document.getElementById("birthday").value;
@@ -28,12 +31,20 @@ email.addEventListener("keypress",function(){
     if(email.value != ""){
         email.setAttribute("class","form-control");
     }
+    if(password.value != ""){
+        password.setAttribute("class","form-control");
+    }
+    submitToPage();
 });
 
 submit.addEventListener('click', function(){
     // Check if email is empty
     if(email.value == ""){
         email.setAttribute("class","form-control empty");
+        return;
+    }
+    if(password.value == ""){
+        password.setAttribute("class","form-control empty");
     }
 });
 
