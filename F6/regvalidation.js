@@ -1,6 +1,6 @@
 
 function submitToPage(){
-   if (validateForm(true)){window.location="https://melow04.github.io/F6/login.html";} 
+   if (validateForm()){window.location="https://melow04.github.io/F6/login.html";} 
 }
 
 
@@ -22,58 +22,72 @@ bdayInput.addEventListener('change',function(){
     document.getElementById("age").value = age;
 });
 
-email.addEventListener("keypress",function(){
-   if(email.value != ""){
-      email.classList.remove("empty");
-  }
-  if(username.value != ""){
-      username.classList.remove("empty");
-  }
-  if(firstname.value != ""){
-      firstname.classList.remove("empty");
-  }
-  if(lastname.value != ""){
-      lastname.classList.remove("empty");
-  }
-});
+email.addEventListener("input", function() {
+   removeEmptyClassIfNotEmpty(email);
+ });
 
-password.addEventListener('input', function(){
-   if (password.value != ""){
-      password.classList.remove("empty");
+ username.addEventListener("input", function() {
+   removeEmptyClassIfNotEmpty(username);
+ });
+
+ firstname.addEventListener("input", function() {
+   removeEmptyClassIfNotEmpty(firstname);
+ });
+
+ lastname.addEventListener("input", function() {
+   removeEmptyClassIfNotEmpty(lastname);
+ });
+
+ password.addEventListener('input', function() {
+   removeEmptyClassIfNotEmpty(password);
+ });
+
+ confpassword.addEventListener('input', function() {
+   if (confpassword.value === password.value) {
+     confpassword.classList.remove("empty");
    }
-});
+ });
 
-submit.addEventListener('click', function(){
-   if(email.value == ""){
-      email.classList.add("empty");
-  }
-  if(username.value == ""){
-      username.classList.add("empty");
-  }
-  if(firstname.value == ""){
-      firstname.classList.add("empty");
-  }
-  if(lastname.value == ""){
-      lastname.classList.add("empty");
-  }
-  if(password.value == ""){
-      password.classList.add("empty");
-  }
-  if(confpassword.value != password.value){
-      confpassword.classList.add("empty");
-  }
-  if(document.querySelectorAll('.empty').length == 0){
-   submitToPage();
-}
-});
 
-submit.addEventListener('mouseover', function(){
-    submit.setAttribute("class","btn btn-primary button-mouse-over");
-});
+ submit.addEventListener('click', function(event) {
+   event.preventDefault();
 
-submit.addEventListener('mouseout', function(){
-    submit.setAttribute("class","btn btn-primary");
-});
+   addEmptyClassIfEmpty(email);
+   addEmptyClassIfEmpty(username);
+   addEmptyClassIfEmpty(firstname);
+   addEmptyClassIfEmpty(lastname);
+   addEmptyClassIfEmpty(password);
+
+   if (confpassword.value !== password.value) {
+     confpassword.classList.add("empty");
+   }
+
+   if (document.querySelectorAll('.empty').length === 0) {
+     submitToPage();
+   }
+ });
+
+ submit.addEventListener('mouseover', function() {
+   submit.classList.add("button-mouse-over");
+ });
+
+ submit.addEventListener('mouseout', function() {
+   submit.classList.remove("button-mouse-over");
+ });
 }
 
-validateForm();
+function removeEmptyClassIfNotEmpty(element) {
+ if (element.value !== "") {
+   element.classList.remove("empty");
+ }
+}
+
+function addEmptyClassIfEmpty(element) {
+ if (element.value === "") {
+   element.classList.add("empty");
+ }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+ validateForm();
+});
