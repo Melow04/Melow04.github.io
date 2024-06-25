@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  background: url(assets/background.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container {
+  margin: auto;
+  padding: 20px;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sidelink {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+}
+.logo {
+  width: 180px;
+  margin-left: 30px;
+}
+
+a {
+  color: white;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password {
+  display: block;
+  margin: 10px 0;
+  text-align: right;
+}
+
+hr {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.divider {
+  padding-left: 50px;
+}
+
+.option {
+  display: grid;
+  place-items: center;
+}
+
+.option a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.option img {
+  height: 40px;
+  width: auto;
+  margin: 10px;
+}
+
+.form-label {
+  color: white;
+  font-weight: 700;
+}
+
+.is-invalid {
+  border-color: 2px solid red;
+}
+
+.full-form {
+  margin-top: 20px;
+  padding-left: 50px;
+}
+
+.form-check {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.form-check-label {
+  padding-right: 10px;
+  padding-left: 5px;
+  color: white;
+}
+
+.loginbtn {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  width: 150px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+  place-items: center;
+  padding-left: 10px;
+}
+
+.instructure {
+  display: grid;
+  place-items: center;
+}
+
+.footer-links a {
+  margin: 5px;
+  font-size: 0.8rem;
+  place-items: center;
+  color: white;
+}
+
+.inst {
+  margin-right: 60px;
+  display: grid;
+  place-items: center;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  text-align: start;
+  color: white;
+}
+
+.footer-container {
+  margin-left: 40px;
+  margin-top: 20px;
+  place-items: center;
+}
