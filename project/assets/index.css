@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  background-color: #a2db95;
+  color: #2f2f2f;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+  font-weight: 600;
+}
+
+.navbar-pokemon {
+  text-decoration: none;
+  padding: 10px;
+}
+
+li {
+  font-size: 20px;
+}
+
+#poke-logo {
+  height: 7rem;
+}
+
+.web-store h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  text-shadow: 0 0 10px #00000048;
+}
+
+.web-store {
+  text-decoration: none;
+}
+
+.sign-in,
+.sign-up {
+  margin-left: 10px;
+ border-radius: 30px;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: #2f2f2fd7;
+  font-size: 20px;
+  border: none;
+  justify-content: left;
+  border-bottom: 0;
+  font-weight: 600;
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+.dropdown-toggle:hover {
+  background-color: #24ccaa;
+  color: white;
+}
+
+
+
+.intro {
+  background: #a2db9579;
+  border-radius: 30px;
+  max-width: 100vh;
+  padding: 2.5rem;
+  min-height: 50vh;
+  margin-top: 20px;
+  margin-left: 1vh;  
+  display: grid;
+
+}
+
+.intro-text {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #2f4858;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.intro p {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: justify;
+  color: #2f4858;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+.shop, .feature{
+  place-items: end;
+  border-radius: 60px;
+  height: 5rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 0.2rem;
+  
+}
+
+.festival {
+  margin-top: 20px;
+  background: url(Fest.PNG);
+  background-size: cover;
+  border-radius: 30px;
+  position: relative;
+  height: 30vh;
+  max-width: 85vh;
+  text-decoration: none;
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+
+.box-link-about {
+  background: url(About.jfif);
+  background-size: cover;
+  max-height: 30vh;
+  max-width: 42vh;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+  
+}
+
+.box-link-play {
+  background: url(Play.jfif);
+  background-size: cover;
+  max-height: 30vh;
+  max-width: 42vh;
+  margin-top: 20px;
+  border-radius: 30px;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.box-link-text{
+ margin-left: 1rem;
+ text-shadow: 0 0 10px rgba(0, 0, 0, 0.76);
+}
+
+.festival:hover, .box-link-play:hover, .box-link-about:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+
+  .navbar-pokemon{
+    padding-top: 1rem;
+    
+  }
+  #poke-logo{
+    height: 4rem;
+  }
+
+  .web-store h1{
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .sign-in, .sign-up{
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    
+  }
+  
+  .intro{
+    margin-left: 0px;
+  }
+  .intro-text {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+
+  .shop, .feature {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .festival, .box-link-about, .box-link-play {
+    font-size: 1.5rem;
+    height: 20vh;
+  }
+}
