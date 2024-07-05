@@ -144,6 +144,7 @@ li {
   color: white;
   font-weight: 700;
   font-size: 4rem;
+  padding-left: 2rem;
   transition: transform 0.3s ease-out;
 }
 
@@ -160,6 +161,7 @@ li {
   color: white;
   font-weight: 700;
   font-size: 4rem;
+  padding-left: 2rem;
   transition: transform 0.3s ease-out;
 }
 
