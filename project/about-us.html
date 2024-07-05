@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Pokemon Go</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+      }
+
+      .navbar {
+        background-color: #a2db95;
+        color: #2f2f2f;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+        font-weight: 600;
+      }
+
+      .navbar-pokemon {
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      li {
+        font-size: 20px;
+      }
+
+      #poke-logo {
+        height: 7rem;
+      }
+
+      .web-store h1 {
+        font-size: 3rem;
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+        text-shadow: 0 0 10px #00000048;
+      }
+
+      .web-store {
+        text-decoration: none;
+      }
+
+      .active a {
+        color: rgb(240, 234, 234);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.377);
+      }
+
+      .sign-in,
+      .sign-up {
+        margin-left: 10px;
+        border-radius: 30px;
+      }
+
+      .dropdown-toggle {
+        background-color: transparent;
+        color: #2f2f2fd7;
+        font-size: 20px;
+        border: none;
+        justify-content: left;
+        border-bottom: 0;
+        font-weight: 600;
+        margin-top: 1px;
+        margin-bottom: 0;
+      }
+
+      .dropdown-toggle:hover {
+        background-color: #24ccaa;
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-pokemon {
+          padding-top: 1rem;
+        }
+        #poke-logo {
+          height: 4rem;
+        }
+
+        .web-store h1 {
+          font-size: 2rem;
+          padding: 0;
+        }
+
+        .sign-in,
+        .sign-up {
+          border-radius: 30px;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigations -->
+    <nav class="navbar navbar-expand-md sticky-top px-5 w-100">
+      <div class="container-fluid">
+        <a href="#" class="navbar-pokemon"
+          ><img
+            src="assets/Pokémon_GO_logo.svg.png"
+            alt="Pokemon"
+            id="poke-logo"
+        /></a>
+        <a href="" class="web-store"><h1>Web Store</h1></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="https://melow04.github.io/project" class="nav-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://melow04.github.io/project/shop.html"
+                class="nav-link"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                href="https://melow04.github.io/project/about-us/html"
+                class="nav-link"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pokemon GO
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pokemon Go Live</a></li>
+                  <hr />
+                  <li><a class="dropdown-item" href="#">Leaderboard</a></li>
+                  <hr />
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#">Offer Redemption</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#">Community Day Map</a>
+                  </li>
+                  <hr />
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <hr />
+                  <li><a class="dropdown-item" href="#">News</a></li>
+                </ul>
+                <li></li>
+              </div>
+            </li>
+            <div>
+              <button type="button" class="btn btn-primary btn-lg sign-in">
+                Sign In
+              </button>
+              <button type="button" class="btn btn-secondary btn-lg sign-up">
+                Sign Up
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigations -->
+  </body>
+</html>
