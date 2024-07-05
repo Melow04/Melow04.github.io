@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: white;
@@ -37,6 +40,11 @@ li {
 
 .web-store {
   text-decoration: none;
+}
+
+.active a{
+  color: rgb(240, 234, 234);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.377);
 }
 
 .sign-in,
@@ -114,6 +122,7 @@ li {
   color: white;
   font-size: 100px;
   font-weight: 700;
+  transition: transform 0.3s ease-out;
 }
 
 
@@ -130,7 +139,7 @@ li {
   color: white;
   font-weight: 700;
   font-size: 4rem;
-  
+  transition: transform 0.3s ease-out;
 }
 
 .box-link-play {
@@ -145,6 +154,7 @@ li {
   color: white;
   font-weight: 700;
   font-size: 4rem;
+  transition: transform 0.3s ease-out;
 }
 
 .box-link-text{
