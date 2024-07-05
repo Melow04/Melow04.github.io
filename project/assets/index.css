@@ -71,9 +71,8 @@ li {
   padding: 2.5rem;
   min-height: 50vh;
   margin-top: 20px;
-  margin-left: 1vh;  
-  display: grid;
-
+  margin-left: 5vh;  
+  margin-bottom: 2rem;
 }
 
 .intro-text {
@@ -157,6 +156,51 @@ li {
   transform: scale(1.1);
 }
 
+/* AJ CSS */
+#pokemonGo_logo {
+  height: 8rem;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.container-md {
+  padding: 15px;
+}
+
+.container-ad {
+
+  background: rgb(36, 204, 170);
+  background: linear-gradient(324deg, rgba(36, 204, 170, 1) 44%, rgba(162, 219, 149, 1) 100%);
+  color: white;
+}
+
+
+.download-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.download-buttons a {
+  display: inline-block;
+}
+
+#download1,
+#download2,
+#download3 {
+  height: 45px;
+  max-height: fit-content;
+  transition: transform 0.3s ease-out;
+}
+
+#download1:hover,
+#download2:hover,
+#download3:hover {
+  transform: scale(1.1);
+}
+
+/* AJ CSS */
+
 @media (max-width: 768px) {
 
 
@@ -200,5 +244,9 @@ li {
   .festival, .box-link-about, .box-link-play {
     font-size: 1.5rem;
     height: 20vh;
+  }
+
+  .container-ad{
+    margin-top: 3rem;
   }
 }
