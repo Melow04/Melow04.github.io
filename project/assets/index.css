@@ -279,6 +279,19 @@ footer p{
   
 }
 
+.copyright p{
+  font-size: 1rem;
+  margin-right: 5rem;
+
+}
+@media (max-width: 575px) {
+  .email-input{
+    width: 25vh;
+  
+  }
+}
+
+
 @media (max-width: 768px) {
 
 
