@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://lh3.googleusercontent.com/4I4XB51OZpQL-JuSUcd8yrchFvAXJrK405d6CtVX9hXOqAC4vFTeuwFACbVzPSCOEeRtMHlLqA33rvlcnGb3FPTSfOuusljfWH9sf1U45Aaq=rw-e365-w1800");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container-custom {
+    background: #158d73;
+    border: 1px solid #d3d6db;
+    border-radius: 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 0px;
+    margin: 20px 0;
+}
+
+.thumbnail {
+    text-align: center;
+    margin: 0px;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.display-4 {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    background-color: #60c3AE;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+    justify-content: center;
+
+}
+
+.lead {
+    background-color: #60c3AE;
+    color: white;
+    padding: 0px 50px 10px 50px;
+    margin: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row p{
+    color: white;
+}
+.back-button button {
+    color: #284858;
+    background-color: #F1B72C;
+    border: none;
+    padding: 10px 20px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.back-button button:hover {
+    background-color: #284858;
+    color: #F1B72C;
+    border: 1px solid #F1B72C;
+    transform: scale(1.1);
+}
+
+.row {
+    padding: 20px 50px 0px 50px;
+    text-align: justify;
+}
