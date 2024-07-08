@@ -79,7 +79,7 @@ li {
   background: #a2db9579;
   border-radius: 30px;
   max-width: 100vh;
-  padding: 2.5rem;
+  padding: 2.5rem ;
   min-height: 50vh;
   margin-top: 20px;
   margin-left: 5vh;  
@@ -171,6 +171,29 @@ li {
 
 .festival:hover, .box-link-play:hover, .box-link-about:hover{
   transform: scale(1.1);
+  box-shadow: 0 0 10px black;
+}
+
+.featured-items{
+  background-color: #24ccaa;
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.featured-items-bottom{
+background-color: #24ccaa;
+border-radius: 0 0 20px 20px;
+}
+
+.featured-items h1{
+  font-weight: 600;
+}
+
+.slide{
 }
 
 /* AJ CSS */
@@ -270,5 +293,10 @@ background: linear-gradient(345deg, rgba(50,85,116,1) 0%, rgba(134,203,118,1) 16
 
   .container-ad{
     margin-top: 3rem;
+  }
+
+  .download-buttons{
+    display: grid;
+    place-items: center;
   }
 }
