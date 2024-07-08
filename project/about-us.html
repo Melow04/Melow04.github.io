@@ -6,453 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="assets/Pokémon_GO_logo.svg.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/about-us.css">
+  <link rel="stylesheet" href="assets/about-us.css">
   <title>About Pokémon Go</title>
 
 
 </head>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: white;
-}
-
-.navbar {
-    background-color: #a2db95;
-    color: #2f2f2f;
-    padding: 10px;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
-    font-weight: 600;
-}
-
-.navbar-pokemon {
-    text-decoration: none;
-    padding: 10px;
-}
-
-li {
-    font-size: 20px;
-}
-
-#poke-logo {
-    height: 7rem;
-}
-
-.web-store h1 {
-    font-size: 3rem;
-    color: white;
-    font-weight: 700;
-    padding: 10px;
-    text-shadow: 0 0 10px #00000048;
-}
-
-.web-store {
-    text-decoration: none;
-}
-
-.active a {
-    color: rgb(240, 234, 234);
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.377);
-}
-
-.sign-in,
-.sign-up {
-    margin-left: 10px;
-    border-radius: 30px;
-}
-
-.dropdown-toggle {
-    background-color: transparent;
-    color: #2f2f2fd7;
-    font-size: 20px;
-    border: none;
-    justify-content: left;
-    border-bottom: 0;
-    font-weight: 600;
-    margin-top: 1px;
-    margin-bottom: 0;
-}
-
-.dropdown-toggle:hover {
-    background-color: #24ccaa;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .navbar-pokemon {
-        padding-top: 1rem;
-    }
-
-    #poke-logo {
-        height: 4rem;
-    }
-
-    .web-store h1 {
-        font-size: 2rem;
-        padding: 0;
-    }
-
-    .sign-in,
-    .sign-up {
-        border-radius: 100px;
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
-}
-
-
-
-#pokemonGo_logo {
-    height: 8rem;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-
-.container-md {
-    padding: 15px;
-}
-
-.container-ad {
-
-    background: rgb(36, 204, 170);
-    background: linear-gradient(324deg, rgba(36, 204, 170, 1) 44%, rgba(162, 219, 149, 1) 100%);
-    color: white;
-}
-
-
-.download-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.download-buttons a {
-    display: inline-block;
-}
-
-#download1,
-#download2,
-#download3 {
-    height: 45px;
-    max-height: fit-content;
-    transition: transform 0.3s ease-out;
-}
-
-#download1:hover,
-#download2:hover,
-#download3:hover {
-    transform: scale(1.1);
-}
-
-.bg_about {
-    background-image: url("https://lh3.googleusercontent.com/4I4XB51OZpQL-JuSUcd8yrchFvAXJrK405d6CtVX9hXOqAC4vFTeuwFACbVzPSCOEeRtMHlLqA33rvlcnGb3FPTSfOuusljfWH9sf1U45Aaq=rw-e365-w1800");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info_cards {
-    background-image: url("https://lh3.googleusercontent.com/4I4XB51OZpQL-JuSUcd8yrchFvAXJrK405d6CtVX9hXOqAC4vFTeuwFACbVzPSCOEeRtMHlLqA33rvlcnGb3FPTSfOuusljfWH9sf1U45Aaq=rw-e365-w1800");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info_cards .container {
-    max-width: 950px;
-    display: block;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    margin: 90px 0px;
-}
-
-.info-img-top {
-    width: 100%;
-    height: 269px;
-    max-height: max-content;
-    object-fit: cover;
-    border-radius: 0px 0px 0px 0px;
-}
-
-#info-img-tops {
-    height: 331px;
-}
-
-.card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    margin: 10px 10px 45px 10px;
-}
-
-.cards {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    margin: 45px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    border: 1.5px solid #F1B72C;
-
-}
-
-.card:hover .card-title {
-    color: #F1B72C;
-    border: 1.5px solid #F1B72C;
-
-}
-
-
-
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.card-body {
-    padding: 0px;
-}
-
-.card-title {
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0px;
-    background-color: #60c3AE;
-    color: white;
-    padding: 10px 30px;
-}
-
-.card-description {
-    color: white;
-    padding: 20px 30px;
-    background-color: #158D73;
-    border-radius: 0 0 15px 15px;
-    text-align: justify;
-}
-
-.info-title {
-
-    margin: 0px -30px;
-    background-color: #60c3AE;
-    padding: 1px 20px;
-}
-
-.info-text {
-    margin: 0px -30px;
-    padding: 1px 20px;
-    background-color: #158D73;
-}
-
-.textt {
-    text-align: justify;
-    margin: 30px;
-    padding: 10px;
-    color: white;
-}
-
-.titlee {
-    margin: 15px;
-    display: flex;
-    padding: 15px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-align: justify;
-
-}
-
-.titles {
-    margin: 15px;
-    display: flex;
-    padding: 15px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-align: justify;
-
-}
-
-.texts {
-    text-align: justify;
-    margin: 30px;
-    padding: 10px;
-    color: white;
-}
-
-.register {
-    width: 475px;
-    text-align: justify;
-    margin: 25px;
-    padding: 0px 10px;
-
-}
-
-.form-control {
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#submitBtn {
-    background-color: #F1B72C;
-    border-radius: 0px 30px 30px 0px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#submitBtn:hover {
-    background-color: #284858;
-    color: #F1B72C;
-    border: 1px solid #F1B72C;
-}
-
-@media (max-width: 992px) {
-    .container-md {
-        padding: 10px;
-    }
-
-    .download-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .register {
-        align-self: center;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-
-
-    }
-
-}
-
-@media (max-width: 768px) {
-    .text-left {
-        text-align: center !important;
-    }
-
-    .download-buttons {
-        align-items: center;
-    }
-
-}
-
-@media (max-width: 875px) {
-
-    #info-img-tops {
-        height: 331px;
-    }
-
-    .info-img-top {
-        width: 100%;
-        height: 268.5px;
-    }
-
-   
-
-}
-
-@media (max-width: 839px) {
-
-
-    .info-img-top {
-        width: 100%;
-        height: 292.5px;
-    }
-
-   
-
-}
-
-
-
-@media (max-width: 475px) {
-    .register {
-
-        align-self: center;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-
-
-    }
-
-
-
-}
-
-
-.col-md-6 {
-    padding: 0 10px;
-    margin-bottom: 10px;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-
-.carousel {
-    width: 100%;
-    overflow: hidden;
-}
-
-.card_link {
-    text-decoration: none;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.card_link:hover {
-    text-decoration: none;
-}
-
-.text-center {
-    font-weight: bold;
-}
-</style>
 
 <body>
   <!-- Navigations -->
@@ -532,7 +96,10 @@ li {
                 alt="Thumbnail.pokemongo" class="card-img-top">
               <div class="card-body">
                 <div class="card-title">Our History</div>
-                <div class="card-description">Pokémon GO took the world by storm in 2016, becoming a global phenomenon that revolutionized mobile gaming.  This innovative augmented reality (AR) experience brought the thrill of catching and training Pokémon to the real world for the first time. <strong>Click to see more</strong> about our journey and how Pokémon GO continues to evolve! </div>
+                <div class="card-description">Pokémon GO took the world by storm in 2016, becoming a global phenomenon
+                  that revolutionized mobile gaming. This innovative augmented reality (AR) experience brought the
+                  thrill of catching and training Pokémon to the real world for the first time. <strong>Click to see
+                    more</strong> about our journey and how Pokémon GO continues to evolve! </div>
               </div>
             </div>
           </a>
@@ -546,7 +113,10 @@ li {
                 alt="Thumbnail.pokemongo" class="card-img-top">
               <div class="card-body">
                 <div class="card-title">Our Mission</div>
-                <div class="card-description">The Pokémon GO team is extremely passionate about creating unforgettable experiences that bridge the gap between the digital and physical worlds. Our mission is to inspire people of all ages to explore their surroundings, get active, and connect with others through the joy of Pokémon. <strong>Click to see more</strong> about how we're achieving this mission.</div>
+                <div class="card-description">The Pokémon GO team is extremely passionate about creating unforgettable
+                  experiences that bridge the gap between the digital and physical worlds. Our mission is to inspire
+                  people of all ages to explore their surroundings, get active, and connect with others through the joy
+                  of Pokémon. <strong>Click to see more</strong> about how we're achieving this mission.</div>
               </div>
             </div>
           </a>
@@ -555,10 +125,14 @@ li {
         <div class="col-md-4">
           <a href="m_companies.html" class="card_link">
             <div class="card">
-              <img src="https://i.postimg.cc/Dmk0MrhZ/Untitled-design-19.png" alt="Thumbnail.pokemongo" class="card-img-top">
+              <img src="https://i.postimg.cc/Dmk0MrhZ/Untitled-design-19.png" alt="Thumbnail.pokemongo"
+                class="card-img-top">
               <div class="card-body">
                 <div class="card-title">Our Mother Companies</div>
-                <div class="card-description">Pokémon GO is a collaboration between two industry leaders: Niantic and Nintendo.  Niantic, pioneers in AR gaming, developed the technology that brings Pokémon to life in your neighborhood.  Nintendo, the creators of Pokémon, has brought these cherished characters to generations of fans. <strong>Click to see more</strong> about our amazing partnership!</div>
+                <div class="card-description">Pokémon GO is a collaboration between two industry leaders: Niantic and
+                  Nintendo. Niantic, pioneers in AR gaming, developed the technology that brings Pokémon to life in your
+                  neighborhood. Nintendo, the creators of Pokémon, has brought these cherished characters to generations
+                  of fans. <strong>Click to see more</strong> about our amazing partnership!</div>
               </div>
             </div>
           </a>
@@ -640,8 +214,9 @@ li {
             </div>
           </div>
           <div class="col-md-4">
-            <img src="https://th.bing.com/th/id/R.56eba4f5dc76584e705f99317122e4d8?rik=oBRYGNLmmh%2boQg&riu=http%3a%2f%2fcdn.segmentnext.com%2fwp-content%2fuploads%2f2016%2f01%2fpokemon_go_super_bowl_anniversary_ad_0-620x404.png&ehk=zi4AptwzrJ2S2EGsrIyxY8MdP172K58gJnVZQ46zY9Y%3d&risl=&pid=ImgRaw&r=0" class="info-img-top"
-              alt="Pokemon Go">
+            <img
+              src="https://th.bing.com/th/id/R.56eba4f5dc76584e705f99317122e4d8?rik=oBRYGNLmmh%2boQg&riu=http%3a%2f%2fcdn.segmentnext.com%2fwp-content%2fuploads%2f2016%2f01%2fpokemon_go_super_bowl_anniversary_ad_0-620x404.png&ehk=zi4AptwzrJ2S2EGsrIyxY8MdP172K58gJnVZQ46zY9Y%3d&risl=&pid=ImgRaw&r=0"
+              class="info-img-top" alt="Pokemon Go">
           </div>
         </div>
       </div>
@@ -659,14 +234,14 @@ li {
                 <h5 class="titlee">Join a community of trainers</h5>
               </div>
               <div class="info-text">
-                <p class="textt">Sign up now to make friends with millions of trainers worldwide. Give and receive gifts,
+                <p class="textt">Sign up now to make friends with millions of trainers worldwide. Give and receive
+                  gifts,
                   trade companions, catch pokémon together, and create teams to win gym raids with ease.</p>
                 <div class="register">
-                  <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                    <div class="input-group-append">
-                      <button class="btn" id="submitBtn">Sign Up Now</button>
-                    </div>
+
+                  <div class="sign-button">
+                    <button type="button" onclick="document.location='registration.html'" class="sign-btn">Sign up
+                      now!</button>
                   </div>
                 </div>
 
@@ -726,11 +301,6 @@ li {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
-  <script>
-    document.getElementById('submitBtn').addEventListener('click', function () {
-      alert('Successfully signed up!');
-    });
-  </script>
 
 </body>
 
