@@ -71,7 +71,7 @@ li {
     color: white;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
     .navbar-pokemon {
         padding-top: 1rem;
     }
