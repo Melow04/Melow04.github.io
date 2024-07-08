@@ -71,7 +71,7 @@ li {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     .navbar-pokemon {
         padding-top: 1rem;
     }
@@ -92,7 +92,6 @@ li {
         margin-top: 1rem;
     }
 }
-
 
 
 #pokemonGo_logo {
@@ -179,7 +178,7 @@ li {
 }
 
 #info-img-tops {
-    height: 307.5px;
+    height: 331px;
 }
 
 .card {
@@ -355,10 +354,31 @@ li {
 @media (max-width: 875px) {
 
     #info-img-tops {
-        height: 321px;
+        height: 331px;
     }
 
+    .info-img-top {
+        width: 100%;
+        height: 268.5px;
+    }
+
+   
+
 }
+
+@media (max-width: 839px) {
+
+
+    .info-img-top {
+        width: 100%;
+        height: 292.5px;
+    }
+
+   
+
+}
+
+
 
 @media (max-width: 475px) {
     .register {
