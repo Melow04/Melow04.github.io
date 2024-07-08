@@ -298,10 +298,11 @@
   .register {
     width: auto;
     text-align: right;
-    margin: 0px 25px 0px 0px;
+    margin: 0px 25px 18.5px 0px;
     padding: 0px 10px;
 
   }
+
 
   .sign-btn {
     color: white;
@@ -347,14 +348,6 @@
       align-items: center;
     }
 
-    .register {
-      align-self: center;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-
-
-    }
 
   }
 
