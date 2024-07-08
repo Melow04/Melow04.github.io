@@ -300,3 +300,41 @@ background: linear-gradient(345deg, rgba(50,85,116,1) 0%, rgba(134,203,118,1) 16
     place-items: center;
   }
 }
+
+@media (max-width: 1320px){
+  .navbar-pokemon{
+    padding-top: 1;
+  }
+
+  #poke-logo{
+    height: 4rem;
+
+  }
+
+  .web-store{
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .intro{
+    margin-left: 0px;
+  }
+
+  .intro-text {
+    font-size: 2rem;
+  }
+
+  .shop, .feature {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+
+  .sign-in,
+  .sign-up{
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+}
