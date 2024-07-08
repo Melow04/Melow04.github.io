@@ -72,8 +72,8 @@
               </div>
             </li>
             <div>
-              <button type="button" class="btn btn-primary btn-lg sign-in" onclick="redirectSignIn">Sign In</button>
-              <button type="button" class="btn btn-secondary btn-lg sign-up" onclick="redirectSignUp">Sign Up</button>
+              <button type="button" class="btn btn-primary btn-lg sign-in" id="redirectSignIn">Sign In</button>
+              <button type="button" class="btn btn-secondary btn-lg sign-up" id="redirectSignUp">Sign Up</button>
             </div>
           </ul>
         </div>
@@ -249,14 +249,12 @@
       <!-- AJ Code of About Part -->
       
 
-<!-- <script>
-  function redirectSignIn{
-    window.location.assign("")
+<script>
+  let url2 = "https://melow04.github.io/project/registration.html";
+document.getElementById("redirectSignUp").onclick =
+function (){
+    window.location.assign(url2)
   }
-
-  function redirectSignUp{
-    window.location.assign("")
-  }
-</script> -->
+</script> 
   </body>
 </html>
