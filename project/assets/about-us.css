@@ -71,11 +71,6 @@ li {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .navbar-pokemon {
-    padding-top: 1rem;
-  }
-
   #poke-logo {
     height: 4rem;
   }
@@ -438,6 +433,4 @@ li {
   text-decoration: none;
 }
 
-.text-center {
-  font-weight: bold;
-}
+

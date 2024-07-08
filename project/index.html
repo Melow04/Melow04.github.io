@@ -72,8 +72,8 @@
               </div>
             </li>
             <div>
-              <button type="button" class="btn btn-primary btn-lg sign-in">Sign In</button>
-              <button type="button" class="btn btn-secondary btn-lg sign-up">Sign Up</button>
+              <button type="button" class="btn btn-primary btn-lg sign-in" onclick="redirectSignIn">Sign In</button>
+              <button type="button" class="btn btn-secondary btn-lg sign-up" onclick="redirectSignUp">Sign Up</button>
             </div>
           </ul>
         </div>
@@ -87,7 +87,7 @@
       <div class="col col-8-md mt-5"><h1 class="intro-text">Pokemon GO Web Store</h1></div>
       <div class=" col col-6-md my-5 ml-4"><p>Welcome to the official Pokémon GO webstore, your one-stop shop for enhancing your Pokémon catching adventures! Here, you can stock up on PokéCoins, the in-game currency you need to power up your Poké Balls, expand your storage, and more!</p></div>
       <div class="col col-6-md mb-2 align-content-end"><button type="button" class="btn btn-primary btn-lg shop">Shop Now</button>
-      <button type="button" class="btn btn-secondary btn-lg feature">Featured Items <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+      <button type="button" class="btn btn-secondary btn-lg feature" onclick="location.href='#featured-items-page'">Featured Items <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
       </svg></button></div>
     </div>
@@ -101,11 +101,44 @@
   </div>
 </div>
 
-<section class="container-fluid">
-  <div class="">
-  
+<section id="featured-items-page">
+<section class="container-fluid mt-5 justify-content-center" >
+  <div class="col col-12-md text-center mt-5 featured-items">
+  <h1>Featured Items</h1>
   </div>
-  
+
+  <div class="mb-3 border-0 bd-example m-0 border-0">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Coins</title><rect width="100%" height="100%" fill="transparent"></rect></svg>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="transparent"></rect></svg>
+        </div>
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="transparent"></rect></svg>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="featured-items-bottom mb-3 py-5">
+    </div>
+   </div>
+  </div>
+</section>
 </section>
 <!-- body -->
 
@@ -156,8 +189,18 @@
     <!-- AJ Code of About Part -->
 
 <nav class="py-5">
-  
+<div class=""></div>
 </nav>
 </footer>
+
+<!-- <script>
+  function redirectSignIn{
+    window.location.assign("")
+  }
+
+  function redirectSignUp{
+    window.location.assign("")
+  }
+</script> -->
   </body>
 </html>
