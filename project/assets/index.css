@@ -363,7 +363,11 @@ footer p{
   }
 
   .intro{
-    margin-left: 0px;
+    margin-left: 1rem;
+  }
+  
+  .intro p{
+    font-size: .5rem;
   }
 
   .intro-text {
@@ -380,7 +384,24 @@ footer p{
   .sign-up{
     border-radius: 30px;
     font-size: 1rem;
-    margin-top: 1rem;
   }
 
+}
+
+@media (max-width: 1500px) {
+  .intro{
+    margin-left: 0px;
+  }
+  .intro-text {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 2rem;
+  }
+  .shop, .feature {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
 }
