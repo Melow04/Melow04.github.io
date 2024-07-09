@@ -70,6 +70,7 @@ footer {
   background: rgb(50, 85, 116);
   background: linear-gradient(345deg, rgba(50, 85, 116, 1) 0%, rgba(134, 203, 118, 1) 165.78%);
   color: white;
+  border-radius: 3rem 3rem 0 0;
 }
 
 footer p {
