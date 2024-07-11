@@ -66,6 +66,7 @@
             height: 1.75rem;
             padding: 0.25rem 0.5rem;
             font-size: 0.9rem;
+            border-color: black;
         }
         .rectangles {
             height: 1.1em;
@@ -96,6 +97,8 @@
             color: red;
             font-size: 0.6em;
             margin-top: -10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
     </style>
 </head>
@@ -116,9 +119,9 @@
                         and join millions of<br>
                         Pokémon trainers!
                     </div>
-                    <div class="mediumtext text-decoration-underline" style="font-weight: 550; margin-right: 6.7em;">
+                    <a href="https://melow04.github.io/project/about-us.html" class="mediumtext text-decoration-underline" style="font-weight: 550; margin-right: 6.7em; color:black;">
                         Return to Homepage
-                    </div>
+                    </a>
                 </div> <!--flex-->
                 <img src="https://i.ibb.co/3CGxqJ2/ballsballsballs.png" class="rectangles" alt="balls">
                 <div class="fs-3 beegtext" style="margin-top: 0.7em; margin-bottom: 0.4em;">
@@ -126,36 +129,38 @@
                 </div>
 
                 <!-- FORM STARTS HERE -->
-            <form id="registrationForm">
+                <form id="registrationForm">
 
                     <div class="container d-flex flex-wrap justify-content-start">
                         <div class="form-container">
                             <label for="username" class="form-label">Username</label>
+                            <div class="form-label" style="position:absolute;margin-top:50px;">Birthday</div>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="username" placeholder="Enter username">
                             </div>
-                            <div class="error" id="usernameError"></div>
+                            <div class="error" id="usernameError">Username is required.</div>
                         </div>
                         <div class="form-container">
                             <label for="email" class="form-label">Email</label>
+                            <div class="form-label" style="position:absolute;margin-top:50px;">POGO Account Code</div>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="email" placeholder="Enter email">
                             </div>
-                            <div class="error" id="emailError"></div>
+                            <div class="error" id="emailError">Email is required.</div>
                         </div> <!--form-container-->
                     </div> <!--form flex container-->
-
+                    <div class="mediumtext" style="font-size:medium; opacity:0;">a</div>
                     <div class="container d-flex flex-wrap justify-content-start">
                         <div class="bday-form-container">
-                            <label for="day" class="form-label">DD</label>
+                            <label for="day" class="form-label" style="font-size:0.7em;">DD</label>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="day" placeholder="--">
                             </div>
-                            <div class="error" id="dayError"></div>
+                            <div class="error" id="dayError">Please enter a valid birthdate.</div>
                         </div>
 
                         <div class="bday-form-container">
-                            <label for="month" class="form-label">MM</label>
+                            <label for="month" class="form-label" style="font-size:0.7em;">MM</label>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="month" placeholder="--">
                             </div>
@@ -163,7 +168,7 @@
                         </div>
 
                         <div class="bday-form-container">
-                            <label for="year" class="form-label">YY</label>
+                            <label for="year" class="form-label" style="font-size:0.7em;">YY</label>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="year" placeholder="--">
                             </div>
@@ -184,22 +189,22 @@
                             <div class="mb-3">
                                 <input type="password" class="form-control rounded-0" id="password" placeholder="Enter password">
                             </div>
-                            <div class="error" id="passwordError"></div>
+                            <div class="error" id="passwordError">=</div>
                         </div>
                         <div class="form-container">
                             <label for="confirmpw" class="form-label">Confirm Password</label>
                             <div class="mb-3">
                                 <input type="password" class="form-control rounded-0" id="confirmpw" placeholder="Confirm password">
                             </div>
-                            <div class="error" id="confirmpwError"></div>
+                            <div class="error" id="confirmpwError">Passwords do not match.</div>
                         </div> <!--form-container-->
                     </div> <!--form flex container-->
 
-                    <div class="container d-flex flex-wrap justify-content-start">
-                        <input type="submit" class="butto" value="Register">
+                <div class="container d-flex flex-wrap justify-content-start" style="margin-left:0.1vw; margin-top: -0.7em;">
+                    <input type="submit" class="butto" value="Register">
+                </form> <!-- FORM ENDS HERE kinda messy but whatever -->
 
-            </form> <!-- FORM ENDS HERE kinda messy but whatever -->
-                    <div class="mediumtext" style="font-weight: 520; margin-left: 1vw; margin-top: 3.2vh;">
+                    <div class="mediumtext" style="font-weight:520; margin-left: 2vw; margin-top: 3.2vh;">
                         Register with:
                     </div>
                     <img src="https://i.ibb.co/56LrDrh/kisspng-google-logo-logo-logo-5ade7dc753b015-9317679115245306313428-1-removebg-preview.png" class="deeznuts" style="margin-left: 1.4vw;">
@@ -207,23 +212,37 @@
                     <img src="https://i.postimg.cc/C1SwQTkT/Facebook-Logo-2023.png"  class="deeznuts" style="margin-top: 3.1vh;">
                 </div><!--flex container-->
 
-                <div class="container d-flex flex-wrap justify-content-start">
-                    <p class="footer-text" style="margin-top:2.4em;">
+                <div class="container d-flex flex-wrap justify-content-start" style="margin-top:-1em;">
+                    <p class="footer-text">
                         © 2024 Niantic, Inc. Pokémon and Pokémon<br>
                         character names are trademarks of Nintendo,<br>
                         Creatures, and GAME FREAK. Pokémon GO is a<br>
                         trademark of Niantic Inc. All rights reserved.<br>
                     </p>
-                    <img src="https://i.postimg.cc/QtcCPJHw/niantic-logo-vector-11573947607oiuhxfwsnm-1-removebg-preview.png" alt="a" style="height: 130px; margin-top: 0.4em; margin-left: 1.5em;">
-                    <img src="https://i.postimg.cc/SNRqYGm4/Pok-mon-GO-logo-svg-removebg-preview.png" alt="a" style="height: 100px; margin-top: 1em;">
+                    <a href="https://nianticlabs.com/?hl=en">
+                        <img src="https://i.postimg.cc/QtcCPJHw/niantic-logo-vector-11573947607oiuhxfwsnm-1-removebg-preview.png" alt="a" style="height: 130px; margin-top:1.4em; margin-left:1.5em;">
+                    </a> <!--this one redirects to niantic labs-->
+                    <a href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go">
+                        <img src="https://i.postimg.cc/SNRqYGm4/Pok-mon-GO-logo-svg-removebg-preview.png" alt="a" style="height: 100px; margin-top:2.2em;">
+                    </a> <!--redirects to pog-->
                 </div><!--flex container-->
-
-            </div> <!--right-section--> 
-        </div> <!--rows--> 
-    </div> <!--container-fluid--> 
+            </div> <!--right-section-->
+        </div> <!--row-->
+    </div> <!--container-fluid-->
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const errorMessages = {
+                usernameError: 'Username is required.',
+                emailError: 'Email is required.',
+                dayError: 'Please enter a valid birthdate.',
+                monthError: '',
+                yearError: '',
+                accodeError: 'Account code is required.',
+                passwordError: 'Password is required.',
+                confirmpwError: 'Passwords do not match.'
+            };
+
             document.getElementById('registrationForm').addEventListener('submit', function(event) {
                 event.preventDefault();
 
@@ -239,37 +258,37 @@
                 const confirmpw = document.getElementById('confirmpw').value.trim();
 
                 if (!username) {
-                    showError('usernameError', 'Username is required.');
+                    showError('usernameError', errorMessages.usernameError);
                     isValid = false;
                 }
 
                 if (!email) {
-                    showError('emailError', 'Email is required.');
+                    showError('emailError', errorMessages.emailError);
                     isValid = false;
                 }
 
                 if (!day || !month || !year) {
-                    showError('dayError', 'Please enter a valid birthdate.');
+                    showError('dayError', errorMessages.dayError);
                     isValid = false;
                 }
 
                 if (!accode) {
-                    showError('accodeError', 'Account code is required.');
+                    showError('accodeError', errorMessages.accodeError);
                     isValid = false;
                 }
 
                 if (!password) {
-                    showError('passwordError', 'Password is required.');
+                    showError('passwordError', errorMessages.passwordError);
                     isValid = false;
                 }
 
                 if (!confirmpw) {
-                    showError('confirmpwError', 'Passwords do not match.');
+                    showError('confirmpwError', errorMessages.confirmpwError);
                     isValid = false;
                 }
 
                 if (password !== confirmpw) {
-                    showError('confirmpwError', 'Passwords do not match.');
+                    showError('confirmpwError', errorMessages.confirmpwError);
                     isValid = false;
                 }
 
@@ -277,12 +296,14 @@
                     alert('Registration submitted!');
                 }
             });
-        });
 
-        function showError(id, message) {
-            const errorElement = document.getElementById(id);
-            errorElement.textContent = message;
-        }
+            function showError(id, message) {
+                const errorElement = document.getElementById(id);
+                errorElement.textContent = message;
+                errorElement.style.opacity = 1;
+            }
+
+        });
     </script>
 </body>
 </html>
