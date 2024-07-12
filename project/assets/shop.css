@@ -359,13 +359,13 @@ button {
     padding: 0;
   }
   
-  .intro{
+  /* .intro{
     margin-left: 0px;
   }
   
   .intro-text {
     font-size: 2rem;
-  }
+  } */
   
   .shop, .feature {
     height: 2.5rem;
@@ -380,12 +380,5 @@ button {
     margin-top: 1rem;
   }
   
-  }
+}
   
-  @media (max-width: 425px) {
-
-    .addtocart {
-       max-width: 80%;
-       text-align: center;
-    }
-  }  

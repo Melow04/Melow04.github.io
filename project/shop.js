@@ -5,18 +5,25 @@ function incrementCounter() {
     document.getElementById("countatc").innerText = count;
 }
 
-function validateForm(id) {
-    const email = document.getElementById(`email-${id}`);
-    const errorMessage = document.getElementById(`error-message-${id}`);
-    const paymentOptions = document.querySelectorAll(`input[name="inlineRadioOptions-${id}"]:checked`);
-    const paymentErrorMessage = document.getElementById(`payment-error-message-${id}`);
+function validateForm() {
+    const email = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+    const paymentOptions = document.getElementsByName('inlineRadioOptions');
+    const paymentErrorMessage = document.getElementById('payment-error-message');
 
-    let paymentSelected = paymentOptions.length > 0;
+    let paymentSelected = false;
+    for (const option of paymentOptions) {
+        if (option.checked) {
+            paymentSelected = true;
+            break;
+        }
+    }
 
-    let emailError = email.value.trim() === '';
-    let paymentError = !paymentSelected;
+    let emailError = false;
+    let paymentError = false;
 
-    if (emailError) {
+    if (email.value.trim() === '') {
+        emailError = true;
         errorMessage.textContent = 'Email is required.';
         email.classList.add('border-red');
     } else {
@@ -24,18 +31,27 @@ function validateForm(id) {
         email.classList.remove('border-red');
     }
 
-    if (paymentError) {
+    if (!paymentSelected) {
+        paymentError = true;
         paymentErrorMessage.textContent = 'Payment Method is required.';
     } else {
         paymentErrorMessage.textContent = '';
     }
 
-    if (emailError || paymentError) {
+    if (emailError && paymentError) {
         alert('Please fill in the required fields.');
         return false;
     } else {
+        if (emailError) {
+            alert('Email is required.');
+        }
+        if (paymentError) {
+            alert('Payment Method is required.');
+        }
+    }
+
+    if (!emailError && !paymentError) {
         alert('Form submitted successfully!');
         // Here, you can add code to actually submit the form
-        return true; // Return true to allow form submission
     }
 }
