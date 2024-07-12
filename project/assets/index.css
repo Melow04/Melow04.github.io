@@ -79,9 +79,9 @@ li {
   background: #a2db9579;
   border-radius: 30px;
   max-width: 100vh;
-  padding: 2.5rem ;
+  padding: 3rem ;
   min-height: 50vh;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 5vh;  
   margin-bottom: 2rem;
 }
@@ -114,7 +114,7 @@ li {
 }
 
 .festival {
-  margin-top: 20px;
+  margin-top: 10px;
   background: url(Fest.PNG);
   background-size: cover;
   background-position: 50% 50%;
@@ -136,7 +136,7 @@ li {
   background-size: cover;
   max-height: 30vh;
   max-width: 42vh;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
   border-radius: 30px;
   overflow-wrap: break-word;
@@ -154,7 +154,7 @@ li {
   background-position: 50% 50%;
   max-height: 30vh;
   max-width: 42vh;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 30px;
   overflow-wrap: break-word;
   text-decoration: none;
@@ -193,8 +193,24 @@ border-radius: 0 0 20px 20px;
   font-weight: 600;
 }
 
-.slide{
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
 
 /* AJ CSS */
 #pokemonGo_logo {
@@ -274,7 +290,7 @@ footer p{
   border-radius: 0 50px 50px 0;
   width: 5rem;
   border: 1px solid white;
-  background-color: #2e0077;
+  background-color: #0d6efd;
   color: white;
   
 }
@@ -319,7 +335,7 @@ footer p{
     margin-left: 0px;
   }
   .intro-text {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   .intro p {
@@ -392,12 +408,9 @@ footer p{
   .intro{
     margin-left: 0px;
   }
-  .intro-text {
-    font-size: 3rem;
-  }
 
   .intro p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .shop, .feature {
     height: 2.5rem;
