@@ -52,7 +52,6 @@
         .form-container-2 {
             width: 100%;
             max-width: 300px;
-            margin-right: 20px;
             z-index: 0;
             margin-top: 30.75px;
         }
@@ -97,6 +96,30 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
+
+        .regtext {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: 1255px) {
+            .form-container-2 {
+                margin-left: -11px;
+                margin-top: 56.75px;
+            }
+        }
+
+        @media screen and (max-width: 735px) {
+            .form-container-2 {
+                margin-right: 30px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .regtext {
+                padding-right: 180px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -171,8 +194,7 @@
                             <div class="error" id="yearError"></div>
                         </div> <!--form-container-->
 
-                        <div class="form-container-2">
-                            
+                    <div class="form-container-2">
                             <div class="mb-3">
                                 <div class="form-label" style="position:absolute;margin-top:-52.5px;">POGO Account</div>
                                 <input type="text" class="form-control rounded-0" id="accode" placeholder="Enter account code (6 digits)">
@@ -202,12 +224,12 @@
                     <input type="submit" class="butto" value="Register">
                 </form> <!-- FORM ENDS HERE kinda messy but whatever -->
 
-                    <div class="mediumtext" style="font-weight:520; margin-left: 2vw; margin-top: 3.2vh;">
+                    <div class="regtext" style="font-weight:520; margin-left: 2vw; margin-top: 3.2vh;">
                         Register with:
                     </div>
-                    <img src="https://i.ibb.co/56LrDrh/kisspng-google-logo-logo-logo-5ade7dc753b015-9317679115245306313428-1-removebg-preview.png" class="deeznuts" style="margin-left: 1.4vw;">
-                    <img src="https://i.ibb.co/Xj6Dntc/Twitter-X-Logo-Graphics-75321100-1-580x387.png"  class="deeznuts" style="margin-top: 3.1vh;">
-                    <img src="https://i.postimg.cc/C1SwQTkT/Facebook-Logo-2023.png"  class="deeznuts" style="margin-top: 3.1vh;">
+                    <img src="assets/googlogo.png" class="deeznuts" style="margin-left: 1.4vw;">
+                    <img src="assets/xlogo.png"  class="deeznuts" style="margin-top: 3.1vh;">
+                    <img src="assets/fblogo.png"  class="deeznuts" style="margin-top: 3.1vh;">
                 </div><!--flex container-->
 
                 <div class="container d-flex flex-wrap justify-content-start" style="margin-top:-1em;">
@@ -218,10 +240,10 @@
                         trademark of Niantic Inc. All rights reserved.<br>
                     </p>
                     <a href="https://nianticlabs.com/?hl=en">
-                        <img src="https://i.postimg.cc/QtcCPJHw/niantic-logo-vector-11573947607oiuhxfwsnm-1-removebg-preview.png" alt="a" style="height: 130px; margin-top:1.4em; margin-left:1.5em;">
+                        <img src="assets/nianlogo.png" alt="a" style="height: 130px; margin-top:1.4em; margin-left:1.1em;">
                     </a> <!--this one redirects to niantic labs-->
                     <a href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go">
-                        <img src="https://i.postimg.cc/SNRqYGm4/Pok-mon-GO-logo-svg-removebg-preview.png" alt="a" style="height: 100px; margin-top:2.2em;">
+                        <img src="assets/pogologo.png" alt="a" style="height: 100px; margin-top:2.2em;">
                     </a> <!--redirects to pog-->
                 </div><!--flex container-->
             </div> <!--right-section-->
