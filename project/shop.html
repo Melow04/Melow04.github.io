@@ -151,7 +151,7 @@
 
                 <div class="d-grid gap-2 d-md-block pb-4">
                   <button class="addtocart" onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow-245" type="button">Buy
+                  <button class="buynow " data-bs-toggle="modal" data-bs-target="#buynow-245" type="button">Buy
                     Now</button>
                 </div>
               </div>
@@ -364,81 +364,6 @@
                     50 WEB STORE BONUS COINS
                     <br>550 + 50 Web Store Bonus = 600 total PokéCoins.
                   </p>
-
-                  <h4 class="fs-4 fw-semibold text-white">
-                    TOTAL:
-                    <span class="price-modal">₱149.00</span>
-                  </h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-8">
-              <div class="mb-0">
-                <label for="email" class="form-label">Billing Information</label>
-                <input type="text" class="form-control form-control-sm" id="email-149" placeholder="Email to get a receipt">
-                <div id="error-message-149" class="error"></div>
-              </div>
-        
-              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1-149" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
-              </div>
-        
-              <div class="mb-0">
-                <label for="PaymentMethod" class="form-label">Payment Method</label>
-                <div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Gcash-149" value="Gcash">
-                    <label class="form-check-label" for="Gcash">Gcash</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Card-149" value="Card">
-                    <label class="form-check-label" for="Card">Card</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Paypal-149" value="Paypal">
-                    <label class="form-check-label" for="Paypal">PayPal</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Grabpay-149" value="Grabpay">
-                    <label class="form-check-label" for="GrabPay">GrabPay</label>
-                  </div>
-                </div>
-                <div id="payment-error-message-149" class="error"></div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button type="button" class="btn completeorder-button-modal">Complete Order</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <div class="modal fade modal-xl" id="buynow-245" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true" id="help">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Online Payment Process</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-4 selected-item-modal">
-              <div class="mt-5 mb-5 ms-5 text-white fst-italic">
-                <div class="ms-4">
-                  <h4 class="fs-6 fw-semibold text-white fst-italic">
-                    <span class="price-modal">600</span>
-                    PokéCoins
-                  </h4>
-                  <p class="description-item-modal">
-                    50 WEB STORE BONUS COINS
-                    <br>550 + 50 Web Store Bonus = 600 total PokéCoins.
-                  </p>
         
                   <h4 class="fs-4 fw-semibold text-white">
                     TOTAL:
@@ -492,6 +417,81 @@
         </div>
       </div>
   </div>
+  
+<div class="modal fade modal-xl" id="buynow-245" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true" id="help">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Online Payment Process</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-4 selected-item-modal">
+            <div class="mt-5 mb-5 ms-5 text-white fst-italic">
+              <div class="ms-4">
+                <h4 class="fs-6 fw-semibold text-white fst-italic">
+                  <span class="price-modal">600</span>
+                  PokéCoins
+                </h4>
+                <p class="description-item-modal">
+                  50 WEB STORE BONUS COINS
+                  <br>550 + 50 Web Store Bonus = 600 total PokéCoins.
+                </p>
+
+                <h4 class="fs-4 fw-semibold text-white">
+                  TOTAL:
+                  <span class="price-modal">₱149.00</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="mb-0">
+              <label for="email" class="form-label">Billing Information</label>
+              <input type="text" class="form-control form-control-sm" id="email" placeholder="Email to get a receipt">
+              <div id="error-message" class="error"></div>
+            </div>
+
+            <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+            </div>
+
+            <div class="mb-0">
+              <label for="PaymentMethod" class="form-label">Payment Method</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Gcash" value="Gcash">
+                  <label class="form-check-label" for="Gcash">Gcash</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Card" value="Card">
+                  <label class="form-check-label" for="Card">Card</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Paypal" value="Paypal">
+                  <label class="form-check-label" for="Paypal">PayPal</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Grabpay" value="Grabpay">
+                  <label class="form-check-label" for="GrabPay">GrabPay</label>
+                </div>
+              </div>
+              <div id="payment-error-message" class="error"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" onclick="validateForm()" class="btn completeorder-button-modal">Complete Order</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   
 
