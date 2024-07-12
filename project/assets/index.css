@@ -193,23 +193,6 @@ border-radius: 0 0 20px 20px;
   font-weight: 600;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-
-.carousel {
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  top: 50%;
-  transform: translateY(-50%);
-} 
 
 
 /* AJ CSS */
