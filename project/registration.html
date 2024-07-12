@@ -12,7 +12,7 @@
             background-color: #F8F8F8;
         }
         .background-left {
-            position: absolute;
+            position: fixed;
             width: 11%;
             height: 100vh;
             background-color: black;
@@ -21,14 +21,11 @@
             position: fixed;
             right: 0;
             width: 11%;
-            height: 100vh;
+            height: 100%;
             background-color: black;
         }
-        .left-section {
-            align-items: center;
-        }
         .left-section img {
-            height: 100vh;
+            height: 100%;
             width: 100%;
             object-fit: cover; /*css magic thingy to fit image in container*/
         }
@@ -119,7 +116,7 @@
                         and join millions of<br>
                         Pokémon trainers!
                     </div>
-                    <a href="https://melow04.github.io/project/about-us.html" class="mediumtext text-decoration-underline" style="font-weight: 550; margin-right: 6.7em; color:black;">
+                    <a href="https://melow04.github.io/project/" class="mediumtext text-decoration-underline" style="font-weight: 550; margin-right: 6.7em; color:black;">
                         Return to Homepage
                     </a>
                 </div> <!--flex-->
@@ -134,7 +131,6 @@
                     <div class="container d-flex flex-wrap justify-content-start">
                         <div class="form-container">
                             <label for="username" class="form-label">Username</label>
-                            <div class="form-label" style="position:absolute;margin-top:50px;">Birthday</div>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="username" placeholder="Enter username">
                             </div>
@@ -142,7 +138,6 @@
                         </div>
                         <div class="form-container">
                             <label for="email" class="form-label">Email</label>
-                            <div class="form-label" style="position:absolute;margin-top:50px;">POGO Account Code</div>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="email" placeholder="Enter email">
                             </div>
@@ -152,6 +147,7 @@
                     <div class="mediumtext" style="font-size:medium; opacity:0;">a</div>
                     <div class="container d-flex flex-wrap justify-content-start">
                         <div class="bday-form-container">
+                            <div class="form-label" style="position:absolute;margin-top:-25px;">Birthday</div>
                             <label for="day" class="form-label" style="font-size:0.7em;">DD</label>
                             <div class="mb-3">
                                 <input type="text" class="form-control rounded-0" id="day" placeholder="--">
@@ -176,7 +172,9 @@
                         </div> <!--form-container-->
 
                         <div class="form-container-2">
+                            
                             <div class="mb-3">
+                                <div class="form-label" style="position:absolute;margin-top:-52.5px;">POGO Account</div>
                                 <input type="text" class="form-control rounded-0" id="accode" placeholder="Enter account code (6 digits)">
                             </div>
                             <div class="error" id="accodeError"></div>
