@@ -3,10 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-/* .banner-in {
-    display:flex;
 
-} */
 .banner {
    
     background-color: #F1B72C;
@@ -21,54 +18,8 @@ body {
     background-color: #F1B72C;
 }
 
-.pokecoins-banner
-
-.h1banner {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #158D73;
-    text-shadow: 1px 1px 1px #158D73;
-    padding-top: 35px;
-    
-}
-
-.h5banner {
-    color: #158D73;
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
-    margin-left: 3.5rem;
-}
-
-.headerbanner {
-    text-align: left;
-}
-
 .pokemongofest {
     height: 160px;
-    /* padding-bottom: 15px;
-    margin-left: 250px; */
-}
-
-.updateshape {
-    background-color: #158D73;
-    width: 250px;
-    height: 50px;
-    margin-left: 1050px;
-    border-radius: 0px 0px 20px 20px;
-}
-
-.numberpokecoins {
-    padding-top: 10px;
-}
-
-.pokecoinsupdate, .pokecoinstext {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.pokecoinsupdate {
-    padding-left: 10px;
 }
 
 .shoppingcart {
@@ -79,44 +30,10 @@ body {
     height: 20px;
 }
 
-.wspaceHeader {
-    height: 20px;
-}
-
-.pokecoins {
-    height: 1000px;
-    background-color: #158D73;
-    box-shadow: gray 0px 0px 30px -12px;
-    border-radius: 20px;
-}
-
 .headerPokecoins {
     height: 200px;
 }
 
-.h1pokecoins {
-    font-size: 50px;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    padding-top: 65px;
-}
-
-.shop {
-    height: 400px;
-}
-
-.products {
-    height: 400px;
-}
-
-.wspaceproduct {
-    height: 400px;
-}
-.boxes {
-    display: flex;  
-    justify-content: space-around;
-}
 .box {
     background-color: #158D73;
     width: 17em;
@@ -125,6 +42,19 @@ body {
     box-shadow: inset black 0px 0px 16px -12px;
     border-radius: 50px;
     transition: background-color 0.4s ease;
+}
+
+.box:hover {
+    background-color: #F1B72C;
+    box-shadow: outset black 0px 0px 50px -12px;
+
+    .buynow {
+        background-color: #158D73;
+    }
+}
+
+.box:hover .price {
+    color: #158D73;
 }
 
 .db-boxes {
@@ -142,6 +72,10 @@ body {
     transition: background-color 0.4s ease;
 }
 
+.db-title-box {
+    color: #158D73;
+}
+
 .dbbox:hover {
     background-color: #158D73;
     box-shadow: outset black 0px 0px 50px -12px;
@@ -155,22 +89,6 @@ body {
     }
 }
 
-.buttons {
-    font-size: 10px !important;
-}
-
-.box:hover {
-    background-color: #F1B72C;
-    box-shadow: outset black 0px 0px 50px -12px;
-}
-
-.box:hover .price {
-    color: #158D73;
-}
-
-.db-title-box {
-    color: #158D73;
-}
 
 .db-buynow {
     background-color: #158D73;
@@ -181,34 +99,16 @@ body {
     transition: background-color 0.4s ease;
 }
 
-
+.buttons {
+    font-size: 10px !important;
+}
 
 .db-text-box {
     font-size: 11px;
 }
 
-.box:hover .buynow {
-    background-color: #158D73;
-}
-
-.inline {
-    display: inline;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.block {
-    display: inline-block;
-    font-style: italic;
-    font-weight: bold;
-}
-
 .price {
     color: #F1B72C;
-}
-
-.pokecoins-text {
-    color: #FFFFFF;
 }
 
 h6 {
@@ -244,10 +144,6 @@ button {
     border: 2px solid #FFFFFF;
 }
 
-.addtocart:active {
-    box-shadow: inset #158D73 0px 0px 30px -12px;
-}
-
 .buynow {
     border: none;
     font-weight: bold;
@@ -258,15 +154,6 @@ button {
 
 .buynow:active {
     box-shadow: inset #F1B72C 0px 0px 40px -12px;
-}
-
-.twohundred {
-    margin-bottom: 9px;
-}
-
-.origprice {
-    text-decoration: line-through;
-    color: #AEAEAE;
 }
 
 .dailybundles {
@@ -280,143 +167,42 @@ button {
     height: 20px;
 }
 
-
-
 .boostbox {
     height: 100px;
 }
 
-.dbtitle {
-    color: #158D73;
+.selected-item-modal{
+    background-color: #158D73;
 }
 
-/* .dbbox {
-    background-color: #F1B72C;
-    box-shadow: inset black 0px 0px 16px -12px;
-    border-radius: 50px;
-    transition: background-color 0.4s ease;
-} */
-
-.voyagerbox {
-    background-color: #F1B72C;
-    width: 300px;
-    height: 350px;
-    margin-top: 50px;
-    padding-top: 20px;
-    box-shadow: inset black 0px 0px 16px -12px;
-    border-radius: 50px;
-    transition: background-color 0.4s ease;
-}
-
-/* 
-.dbbox:hover .dbtitle, .voyagerbox:hover .dbtitle {
+.price-modal {
     color: #F1B72C;
 }
 
-.dbbox:hover .buynow, .voyagerbox:hover .buynow {
+.description-item-modal {
+    font-size: 8px;
+}
+
+.completeorder-button-modal{
+    color: white;
+    background-color: #158D73;
+}
+
+.completeorder-button-modal:hover {
+    color: white;
     background-color: #F1B72C;
 }
 
-.voyager {
-    font-size: 10px;
-    margin-top: 5px;
+.error {
+    color: red;
+    font-size: 0.875em;
 }
 
-.dbaddtocart:active {
-    box-shadow: inset #F1B72C 0px 0px 30px -12px;
+.border-red {
+    border-color: red !important;
 }
 
-.dbbuynow {
-    border: none;
-    font-weight: bold;
-    background-color: #158D73;
-    border: 2px solid #FFFFFF;
-    transition: background-color 0.4s ease;
-}
 
-.dbbuynow:active {
-    box-shadow: inset #F1B72C 0px 0px 40px -12px;
-}
-/* 
-@media (max-width: 768px) {
-
-    .banner {
-        height: 20px;
-        background-color: #F1B72C;
-        border-radius: 0 0 20px 20px;
-        box-shadow: gray 0px 0px 30px -12px;
-    }
-
-    .h1banner {
-        font-size: 4rem;
-        padding-top: 25px;
-    }
-
-    .headerbanner {
-        margin-right: 0;
-    }
-
-    .pokemongofest {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .updateshape {
-        width: 200px;
-        margin-left: 0;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-
-    .pokecoins {
-        height: auto;
-        padding: 20px;
-    }
-
-    .h1pokecoins {
-        font-size: 40px;
-        padding-top: 45px;
-    }
-
-    .box {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-/* Adjust for mobile phones */
-/* @media (max-width: 480px) {
-    .h1banner {
-        font-size: 3rem;
-        padding-top: 15px;
-    }
-
-    .updateshape {
-        width: 150px;
-    }
-
-    .h1pokecoins {
-        font-size: 30px;
-        padding-top: 35px;
-    }
-
-    .box {
-        width: 200px;
-        height: 200px;
-        margin-top: 30px;
-        padding-top: 15px;
-    }
-
-    .pokecoinsimg {
-        height: 80px;
-        margin-left: 0;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 5px;
-    }
-}  */
 .navbar {
     background-color: #a2db95;
     color: #2f2f2f;
@@ -596,3 +382,10 @@ button {
   
   }
   
+  @media (max-width: 425px) {
+
+    .addtocart {
+       max-width: 80%;
+       text-align: center;
+    }
+  }  
