@@ -66,170 +66,182 @@ li {
 
 /* footer */
 
-footer{
-  background: rgb(50,85,116);
-  background: linear-gradient(345deg, rgba(50,85,116,1) 0%, rgba(134,203,118,1) 165.78%);
+footer {
+  background: rgb(50, 85, 116);
+  background: linear-gradient(345deg, rgba(50, 85, 116, 1) 0%, rgba(134, 203, 118, 1) 165.78%);
   border-radius: 3rem 3rem 0 0;
   color: white;
+}
+
+footer p {
+  font-weight: 600;
+  padding-left: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+
+
+.email-input {
+  border-radius: 50px 0 0 50px;
+  padding-left: 1.5rem;
+  height: 3rem;
+}
+
+.email-letter {
+  padding-left: 2rem;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.email-letter button {
+  border-radius: 0 50px 50px 0;
+  width: 5rem;
+  border: 1px solid white;
+  background-color: #2e0077;
+  color: white;
+
+}
+
+.copyright p {
+  font-size: 1rem;
+  margin-right: 5rem;
+
+}
+
+@media (max-width: 575px) {
+  .email-input {
+    width: 25vh;
+
   }
-  
-  footer p{
-    font-weight: 600;
-    padding-left: 2.5rem;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .navbar-pokemon {
+    padding-top: 1rem;
+
   }
-  
-  
-  
-  
-  .email-input{
-    border-radius: 50px 0 0 50px;
-    padding-left: 1.5rem;
-    height: 3rem;
+
+  #poke-logo {
+    height: 4rem;
   }
-  
-  .email-letter{
-    padding-left: 2rem;
-    position: relative;
-    margin-right: 2rem;
+
+  .web-store h1 {
+    font-size: 2rem;
+    padding: 0;
   }
-  
-  .email-letter button{
-    border-radius: 0 50px 50px 0;
-    width: 5rem;
-    border: 1px solid white;
-    background-color: #2e0077;
-    color: white;
-    
-  }
-  
-  .copyright p{
+
+  .sign-in,
+  .sign-up {
+    border-radius: 30px;
     font-size: 1rem;
-    margin-right: 5rem;
-  
+    margin-top: 1rem;
+
   }
-  @media (max-width: 575px) {
-    .email-input{
-      width: 25vh;
-    
-    }
+
+  .intro {
+    margin-left: 0px;
   }
-  
-  
-  @media (max-width: 768px) {
-  
-  
-    .navbar-pokemon{
-      padding-top: 1rem;
-      
-    }
-    #poke-logo{
-      height: 4rem;
-    }
-  
-    .web-store h1{
-      font-size: 2rem;
-      padding: 0;
-    }
-  
-    .sign-in, .sign-up{
-      border-radius: 30px;
-      font-size: 1rem;
-      margin-top: 1rem;
-      
-    }
-    
-    .intro{
-      margin-left: 0px;
-    }
-    .intro-text {
-      font-size: 2.5rem;
-    }
-  
-    .intro p {
-      font-size: 1rem;
-    }
-  
-  
-    .shop, .feature {
-      height: 2.5rem;
-      font-size: 1rem;
-    }
-  
-    .festival, .box-link-about, .box-link-play {
-      font-size: 1.5rem;
-      height: 20vh;
-    }
-  
-    .container-ad{
-      margin-top: 3rem;
-    }
-  
-    .download-buttons{
-      display: grid;
-      place-items: center;
-    }
+
+  .intro-text {
+    font-size: 2.5rem;
   }
-  
-  @media (max-width: 1320px){
-    .navbar-pokemon{
-      padding-top: 1;
-    }
-  
-    #poke-logo{
-      height: 4rem;
-  
-    }
-  
-    .web-store{
-      font-size: 2rem;
-      padding: 0;
-    }
-  
-    .intro{
-      margin-left: 1rem;
-    }
-    
-    .intro p{
-      font-size: .5rem;
-    }
-  
-    .intro-text {
-      font-size: 2rem;
-    }
-  
-    .shop, .feature {
-      height: 2.5rem;
-      font-size: 1rem;
-    }
-  
-  
-    .sign-in,
-    .sign-up{
-      border-radius: 30px;
-      font-size: 1rem;
-    }
-  
+
+  .intro p {
+    font-size: 1rem;
   }
-  
-  @media (max-width: 1500px) {
-    .intro{
-      margin-left: 0px;
-    }
-    .intro-text {
-      font-size: 3rem;
-    }
-  
-    .intro p {
-      font-size: 2rem;
-    }
-    .shop, .feature {
-      height: 2.5rem;
-      font-size: 1rem;
-      margin-top: 2rem;
-    }
+
+
+  .shop,
+  .feature {
+    height: 2.5rem;
+    font-size: 1rem;
   }
+
+  .festival,
+  .box-link-about,
+  .box-link-play {
+    font-size: 1.5rem;
+    height: 20vh;
+  }
+
+  .container-ad {
+    margin-top: 3rem;
+  }
+
+  .download-buttons {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 1320px) {
+  .navbar-pokemon {
+    padding-top: 1;
+  }
+
+  #poke-logo {
+    height: 4rem;
+
+  }
+
+  .web-store {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .intro {
+    margin-left: 1rem;
+  }
+
+  .intro p {
+    font-size: .5rem;
+  }
+
+  .intro-text {
+    font-size: 2rem;
+  }
+
+  .shop,
+  .feature {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+
+  .sign-in,
+  .sign-up {
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 1500px) {
+  .intro {
+    margin-left: 0px;
+  }
+
+  .intro-text {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 2rem;
+  }
+
+  .shop,
+  .feature {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
 /*footer end*/
 
 #pokemonGo_logo {
