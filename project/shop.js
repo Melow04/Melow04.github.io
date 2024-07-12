@@ -3,20 +3,28 @@ let count = 0;
 function incrementCounter() {
     count++;
     document.getElementById("countatc").innerText = count;
+    alert('Added to Cart');
 }
 
-function validateForm(id) {
-    const email = document.getElementById(`email-${id}`);
-    const errorMessage = document.getElementById(`error-message-${id}`);
-    const paymentOptions = document.querySelectorAll(`input[name="inlineRadioOptions-${id}"]:checked`);
-    const paymentErrorMessage = document.getElementById(`payment-error-message-${id}`);
+function validateForm(modalId) {
+    const email = document.getElementById('email-' + modalId);
+    const errorMessage = document.getElementById('error-message-' + modalId);
+    const paymentOptions = document.getElementsByName('inlineRadioOptions-' + modalId);
+    const paymentErrorMessage = document.getElementById('payment-error-message-' + modalId);
 
-    let paymentSelected = paymentOptions.length > 0;
+    let paymentSelected = false;
+    for (const option of paymentOptions) {
+        if (option.checked) {
+            paymentSelected = true;
+            break;
+        }
+    }
 
-    let emailError = email.value.trim() === '';
-    let paymentError = !paymentSelected;
+    let emailError = false;
+    let paymentError = false;
 
-    if (emailError) {
+    if (email.value.trim() === '') {
+        emailError = true;
         errorMessage.textContent = 'Email is required.';
         email.classList.add('border-red');
     } else {
@@ -24,18 +32,26 @@ function validateForm(id) {
         email.classList.remove('border-red');
     }
 
-    if (paymentError) {
+    if (!paymentSelected) {
+        paymentError = true;
         paymentErrorMessage.textContent = 'Payment Method is required.';
     } else {
         paymentErrorMessage.textContent = '';
     }
 
-    if (emailError || paymentError) {
+    if (emailError && paymentError) {
         alert('Please fill in the required fields.');
         return false;
     } else {
-        alert('Form submitted successfully!');
-        // Here, you can add code to actually submit the form
-        return true; // Return true to allow form submission
+        if (emailError) {
+            alert('Email is required.');
+        }
+        if (paymentError) {
+            alert('Payment Method is required.');
+        }
+    }
+
+    if (!emailError && !paymentError) {
+        alert('Your order has been placed successfully!');
     }
 }
