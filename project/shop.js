@@ -3,13 +3,14 @@ let count = 0;
 function incrementCounter() {
     count++;
     document.getElementById("countatc").innerText = count;
+    alert('Added to Cart');
 }
 
-function validateForm() {
-    const email = document.getElementById('email');
-    const errorMessage = document.getElementById('error-message');
-    const paymentOptions = document.getElementsByName('inlineRadioOptions');
-    const paymentErrorMessage = document.getElementById('payment-error-message');
+function validateForm(modalId) {
+    const email = document.getElementById('email-' + modalId);
+    const errorMessage = document.getElementById('error-message-' + modalId);
+    const paymentOptions = document.getElementsByName('inlineRadioOptions-' + modalId);
+    const paymentErrorMessage = document.getElementById('payment-error-message-' + modalId);
 
     let paymentSelected = false;
     for (const option of paymentOptions) {
@@ -51,7 +52,6 @@ function validateForm() {
     }
 
     if (!emailError && !paymentError) {
-        alert('Form submitted successfully!');
-        // Here, you can add code to actually submit the form
+        alert('Your order has been placed successfully!');
     }
 }

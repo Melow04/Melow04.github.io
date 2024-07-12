@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div class="navbar-yellow-bg">
   <nav class="navbar navbar-expand-md px-5 w-100">
     <div class="container-fluid ">
       <a href="#" class="navbar-pokemon"><img src="assets/Pokémon_GO_logo.svg.png" alt="Pokemon" id="poke-logo" /></a>
@@ -68,6 +69,8 @@
     </div>
     </div>
   </nav>
+  </div>
+
   <div class="container-fluid">
     <div class="row banner">
       <div class="col-md-4 col-12 text-center text-md-end pt-4 ps-3 pb-3">
@@ -106,7 +109,8 @@
 
       </div>
     </div>
-    POKECOINS
+
+    <!-- POKECOINS -->
     <div class="row">
       <div class="col-md-12 second-in mt-4">
         <div class="pb-5">
@@ -173,7 +177,7 @@
                 </h6>
                 <div class="d-grid gap-2 d-md-block pb-2">
                   <button class="addtocart" onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow500" type="button">Buy
+                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow-500" type="button">Buy
                     Now</button>
                 </div>
               </div>
@@ -195,7 +199,7 @@
                 </h6>
                 <div class="d-grid gap-2 d-md-block pb-2">
                   <button class="addtocart" onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow994" type="button">Buy
+                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow-994" type="button">Buy
                     Now</button>
                 </div>
               </div>
@@ -217,7 +221,7 @@
                 </h6>
                 <div class="d-grid gap-2 d-md-block pb-2">
                   <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow2950" type="button">Buy
+                  <button class="buynow  " data-bs-toggle="modal" data-bs-target="#buynow-2950" type="button">Buy
                     Now</button>
                 </div>
               </div>
@@ -227,124 +231,205 @@
       </div>
     </div>
 
-    DAILY BUNDLES
+    <!-- DAILY BUNDLES -->
     <div class="row">
       <div class="col-md-12 third-in mt-4">
-        <div class="">
-          <div class="text-center mt-5">
-            <h1 class="fw-bold text-white">Daily Bundles</h1>
-          </div>
-
-          <div class="db-boxes row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
-            <div class="text-center dbbox">
-              <div class="fst-italic mt-3">
-                <p class="fs-3 mb-0 fw-semibold"><span class="db-title-box">Boost Box</span>
-
-                <div>
-                  <span>
-                    <img src="ShopImages/pokeballs.png" alt="Pokeballs" class="coin">
-                    <span class="fw-semibold text-white db-text-box">x20 Poké Ball
-                    </span>
-                </div>
-                <div>
-                  <span>
-                    <img src="ShopImages/luckyegg.png" alt="Lucky Egg" class="coin">
-                    <span class="fw-semibold text-white db-text-box">1x Lucky Egg
-                    </span>
-                </div>
-                <img src="ShopImages/boostbox.png" alt="boost box" class="boostbox">
-
-                <div class="mb-2">
-                  <img
-                    src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
-                    alt="pokecoins" class="coin">
-                  <span class="align-middle text-white">100</span>
-                </div>
-                <div class="d-grid gap-2 d-md-block pb-2">
-                  <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="db-buynow" data-bs-toggle="modal" data-bs-target="#buynow100" type="button">Buy Now</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="text-center dbbox">
-              <div class="fst-italic mt-3">
-                <p class="fs-3 mb-0 fw-semibold"><span class="db-title-box">Great Raid Box</span>
-
-                <div>
-                  <span>
-                    <img src="ShopImages/battlepass.png" alt="Premium Battle Pass" class="coin">
-                    <span class="fw-semibold text-white db-text-box">x2 Premium Battle Pass
-                    </span>
-                </div>
-                <div>
-                  <span>
-                    <img src="ShopImages/remoteraidpass.png" alt="Remote Raid Pass" class="coin">
-                    <span class="fw-semibold text-white db-text-box">2x Remote Raid Pass
-                    </span>
-                </div>
-                <img src="ShopImages/greatraidbox.png" alt="boost box" class="boostbox">
-
-                <div class="mb-1">
-                  <img
-                    src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
-                    alt="pokecoins" class="coin">
-                  <span class="align-middle text-white">425</span>
-                </div>
-                <div class="d-grid gap-2 d-md-block pb-2">
-                  <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="db-buynow" data-bs-toggle="modal" data-bs-target="#buynow425" type="button">Buy Now</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="text-center dbbox">
-              <div class="fst-italic mt-3">
-                <p class="fs-3 mb-0 fw-semibold"><span class="db-title-box">Voyager Box</span>
-
-                <div>
-                  <span>
-                    <img src="ShopImages/SuperIncubator.png" alt="Super Incubator" class="coin">
-                    <span class="fw-semibold text-white db-text-box">x8 Super Incubator
-                    </span>
-                </div>
-                <div>
-                  <span>
-                    <img src="ShopImages/Incense.png" alt="Incense" class="coin">
-                    <span class="fw-semibold text-white db-text-box">x2 Incense
-                    </span>
-                </div>
-                <div>
-                  <span>
-                    <img src="ShopImages/EggIncubator.png" alt="Egg Incubator" class="coin">
-                    <span class="fw-semibold text-white db-text-box">x8 Incubator
-                    </span>
-                </div>
-                <img src="ShopImages/VoyagerBox.png" alt="Voyager Box" class="boostbox">
-
-                <div class="mb-2">
-                  <img
-                    src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
-                    alt="pokecoins" class="coin">
-                  <span class="align-middle text-white">1, 730</span>
-                </div>
-                <div class="d-grid gap-2 d-md-block pb-2">
-                  <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
-                  <button class="db-buynow" data-bs-toggle="modal" data-bs-target="#buynow1730" type="button">Buy Now</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <div class="text-center mt-5">
+          <h1 class="fw-bold text-white">Daily Bundles</h1>
         </div>
 
+        <div class="db-boxes row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
+          <div class="text-center dbbox">
+            <div class="fst-italic mt-3 mb-0">
+              <p class="fs-3 mb-0 fw-semibold"><span class="db-title-box">Boost Box</span>
+
+              <div>
+                <span>
+                  <img src="ShopImages/pokeballs.png" alt="Pokeballs" class="coin">
+                  <span class="fw-semibold text-white db-text-box">x20 Poké Ball
+                  </span>
+              </div>
+              <div>
+                <span>
+                  <img src="ShopImages/luckyegg.png" alt="Lucky Egg" class="coin">
+                  <span class="fw-semibold text-white db-text-box">1x Lucky Egg
+                  </span>
+              </div>
+              <img src="ShopImages/boostbox.png" alt="boost box" class="boostbox">
+
+              <div class="mb-2">
+                <img src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
+                  alt="pokecoins" class="coin">
+                <span class="align-middle text-white">100</span>
+              </div>
+              <div class="d-grid gap-2 d-md-block pb-2">
+                <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
+                <button class="db-buynow" data-bs-toggle="modal" data-bs-target="#buynow-100" type="button">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center dbbox">
+            <div class="fst-italic mt-3">
+              <p class="fs-3 mb-0 fw-semibold"><span class="db-title-box">Great Raid Box</span>
+
+              <div>
+                <span>
+                  <img src="ShopImages/battlepass.png" alt="Premium Battle Pass" class="coin">
+                  <span class="fw-semibold text-white db-text-box">x2 Premium Battle Pass
+                  </span>
+              </div>
+              <div>
+                <span>
+                  <img src="ShopImages/remoteraidpass.png" alt="Remote Raid Pass" class="coin">
+                  <span class="fw-semibold text-white db-text-box">2x Remote Raid Pass
+                  </span>
+              </div>
+              <img src="ShopImages/greatraidbox.png" alt="boost box" class="boostbox">
+
+              <div class="mb-2">
+                <img src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
+                  alt="pokecoins" class="coin">
+                <span class="align-middle text-white">425</span>
+              </div>
+              <div class="d-grid gap-2 d-md-block pb-2">
+                <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
+                <button class="db-buynow" data-bs-toggle="modal" data-bs-target="#buynow-425" type="button">Buy
+                  Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center dbbox">
+            <div class="fst-italic mt-3">
+              <p class="fs-3 mb-0 fw-semibold"><span class="db-title-box">Voyager Box</span>
+
+              <div>
+                <span>
+                  <img src="ShopImages/SuperIncubator.png" alt="Super Incubator" class="coin">
+                  <span class="fw-semibold text-white db-text-box">x8 Super Incubator
+                  </span>
+              </div>
+              <div>
+                <span>
+                  <img src="ShopImages/Incense.png" alt="Incense" class="coin">
+                  <span class="fw-semibold text-white db-text-box">x2 Incense
+                  </span>
+              </div>
+              <div>
+                <span>
+                  <img src="ShopImages/EggIncubator.png" alt="Egg Incubator" class="coin">
+                  <span class="fw-semibold text-white db-text-box">x8 Incubator
+                  </span>
+              </div>
+              <img src="ShopImages/VoyagerBox.png" alt="Voyager Box" class="boostbox">
+
+              <div class="mb-2">
+                <img src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
+                  alt="pokecoins" class="coin">
+                <span class="align-middle text-white">1, 730</span>
+              </div>
+              <div>
+                <div class="d-grid gap-2 d-md-block pb-2">
+                  <button class="addtocart  " onclick="incrementCounter()" type="button">Add to Cart</button>
+                  <button class="db-buynow" data-bs-toggle="modal" data-bs-target="#buynow-1730" type="button">Buy
+                    Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="pt-5 bottom-footer">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pb-3 mb-5 mx-3 border-bottom">
+            <!-- Newsletter -->
+            <div class="col-md-4 mb-">
+              <p class="d-flex align-items-center mb-3 newsletter">Stay in the loop and sign up for the Pokemon GO
+                newsletter:</p>
+              <div class="email-letter d-flex flex-sm-row">
+                <input type="email" class="form-control email-input" placeholder="Enter your Email">
+                <button type="button"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                      <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg></span></button>
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2 mb-4">
+              <ul class="nav flex-column justify-content-center">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">GO FEST</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">NEWS</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SEASONS</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">EVENTS</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">COMMUNITY DAY MAP</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-md-2 mb-4 ">
+              <ul class="nav flex-column ">
+
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">LEADERBOARD</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">STORE</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SUPPORT</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">OFFER REDEMPTION</a>
+                </li>
+            </div>
+
+            <div class="col-md-3 mb-4 justify-content-center">
+              <h5>Socials</h5>
+              <ul class="nav list-unstyled d-flex socials">
+                <li class="mr-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="30" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16">
+                      <path
+                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                    </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="30" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-between mx-5 copyright">
+            <p>&copy; No copyright infringement intended. All images, characters, and elements used are the properties
+              of Pokémon GO, Niantic, The Pokémon Company, and Nintendo. This content is created for school purposes
+              only..</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3 pt-4"><a class="link-body-emphasis" href="#"><img
+                    src="https://i.postimg.cc/MGX6CRL4/Pokemon.png" alt=""></a>
+              </li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><img
+                    src="https://i.postimg.cc/52s9KpsL/Niantic.png" alt=""></a></li>
+
+            </ul>
+          </div>
+        </footer>
       </div>
     </div>
   </div>
+  <!-- MODAL -->
 
-  MODAL
+  <!-- pokecoins -->
+  <!-- Modal 1 -->
   <div class="modal fade modal-xl" id="buynow-149" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true" id="help">
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -364,7 +449,6 @@
                     50 WEB STORE BONUS COINS
                     <br>550 + 50 Web Store Bonus = 600 total PokéCoins.
                   </p>
-        
                   <h4 class="fs-4 fw-semibold text-white">
                     TOTAL:
                     <span class="price-modal">₱149.00</span>
@@ -372,210 +456,639 @@
                 </div>
               </div>
             </div>
-        
             <div class="col-8">
               <div class="mb-0">
-                <label for="email" class="form-label">Billing Information</label>
-                <input type="text" class="form-control form-control-sm" id="email" placeholder="Email to get a receipt">
-                <div id="error-message" class="error"></div>
+                <label for="email-149" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-149"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-149" class="error"></div>
               </div>
-        
               <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                 <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
               </div>
-        
               <div class="mb-0">
                 <label for="PaymentMethod" class="form-label">Payment Method</label>
                 <div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Gcash" value="Gcash">
-                    <label class="form-check-label" for="Gcash">Gcash</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-149" id="Gcash-149"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-149">Gcash</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Card" value="Card">
-                    <label class="form-check-label" for="Card">Card</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-149" id="Card-149"
+                      value="Card">
+                    <label class="form-check-label" for="Card-149">Card</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Paypal" value="Paypal">
-                    <label class="form-check-label" for="Paypal">PayPal</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-149" id="Paypal-149"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-149">PayPal</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Grabpay" value="Grabpay">
-                    <label class="form-check-label" for="GrabPay">GrabPay</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-149" id="Grabpay-149"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-149">GrabPay</label>
                   </div>
                 </div>
-                <div id="payment-error-message" class="error"></div>
+                <div id="payment-error-message-149" class="error"></div>
               </div>
             </div>
           </div>
         </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button type="button" onclick="validateForm()" class="btn completeorder-button-modal">Complete Order</button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal" onclick="validateForm('149')">Complete
+            Order</button>
         </div>
-      </div>
-  </div>
-  
-<div class="modal fade modal-xl" id="buynow-245" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true" id="help">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Online Payment Process</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-4 selected-item-modal">
-            <div class="mt-5 mb-5 ms-5 text-white fst-italic">
-              <div class="ms-4">
-                <h4 class="fs-6 fw-semibold text-white fst-italic">
-                  <span class="price-modal">600</span>
-                  PokéCoins
-                </h4>
-                <p class="description-item-modal">
-                  50 WEB STORE BONUS COINS
-                  <br>550 + 50 Web Store Bonus = 600 total PokéCoins.
-                </p>
-
-                <h4 class="fs-4 fw-semibold text-white">
-                  TOTAL:
-                  <span class="price-modal">₱149.00</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-8">
-            <div class="mb-0">
-              <label for="email" class="form-label">Billing Information</label>
-              <input type="text" class="form-control form-control-sm" id="email" placeholder="Email to get a receipt">
-              <div id="error-message" class="error"></div>
-            </div>
-
-            <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
-            </div>
-
-            <div class="mb-0">
-              <label for="PaymentMethod" class="form-label">Payment Method</label>
-              <div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Gcash" value="Gcash">
-                  <label class="form-check-label" for="Gcash">Gcash</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Card" value="Card">
-                  <label class="form-check-label" for="Card">Card</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Paypal" value="Paypal">
-                  <label class="form-check-label" for="Paypal">PayPal</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Grabpay" value="Grabpay">
-                  <label class="form-check-label" for="GrabPay">GrabPay</label>
-                </div>
-              </div>
-              <div id="payment-error-message" class="error"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" onclick="validateForm()" class="btn completeorder-button-modal">Complete Order</button>
       </div>
     </div>
   </div>
-</div>
 
-  
-
-  FOOTER
-  <footer class="pt-5 bottom-footer">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pb-3 mb-5 mx-3 border-bottom">
-      <!-- Newsletter -->
-      <div class="col-md-4 mb-">
-        <p class="d-flex align-items-center mb-3 newsletter">Stay in the loop and sign up for the Pokemon GO
-          newsletter:</p>
-        <div class="email-letter d-flex flex-sm-row">
-          <input type="email" class="form-control email-input" placeholder="Enter your Email">
-          <button type="button"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                <path
-                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-              </svg></span></button>
+  <!-- Modal 2 -->
+  <div class="modal fade modal-xl" id="buynow-245" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal">
+              <div class="mt-5 mb-5 ms-3 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-6 fw-semibold text-white fst-italic">
+                    <span class="price-modal">1, 300</span>
+                    PokéCoins
+                  </h4>
+                  <p class="description-item-modal">
+                    100 WEB STORE BONUS COINS
+                    <br>1, 200 + 100 Web Store Bonus = 1, 300 total PokéCoins
+                  </p>
+                  <h4 class="fs-4 fw-semibold text-white">
+                    TOTAL:
+                    <span class="text-decoration-line-through text-white-50">₱289</span>
+                    <span class="price-modal">₱245.65</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0">
+                <label for="email-245" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-245"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-245" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-245" id="Gcash-245"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-245">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-245" id="Card-245"
+                      value="Card">
+                    <label class="form-check-label" for="Card-245">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-245" id="Paypal-245"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-245">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-245" id="Grabpay-245"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-245">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-245" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal" onclick="validateForm('245')">Complete
+            Order</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="col-md-1"></div>
-
-      <div class="col-md-2 mb-4">
-        <ul class="nav flex-column justify-content-center">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">GO FEST</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">NEWS</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SEASONS</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">EVENTS</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">COMMUNITY DAY MAP</a>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="col-md-2 mb-4 ">
-        <ul class="nav flex-column ">
-
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">LEADERBOARD</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">STORE</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SUPPORT</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">OFFER REDEMPTION</a>
-          </li>
-      </div>
-
-      <div class="col-md-3 mb-4 justify-content-center">
-        <h5>Socials</h5>
-        <ul class="nav list-unstyled d-flex socials">
-          <li class="mr-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-              </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-              </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                height="30" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16">
-                <path
-                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
-              </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                height="30" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                <path
-                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-              </svg></a></li>
-        </ul>
+  <!-- Modal 3 -->
+  <div class="modal fade modal-xl" id="buynow-500" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal">
+              <div class="mt-5 mb-5 ms-3 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-6 fw-semibold text-white fst-italic">
+                    <span class="price-modal">2, 700</span>
+                    PokéCoins
+                  </h4>
+                  <p class="description-item-modal">
+                    200 WEB STORE BONUS COINS
+                    <br>2, 500 + 50 Web Store Bonus = 2, 700 total PokéCoins
+                  </p>
+                  <h4 class="fs-4 fw-semibold text-white">
+                    TOTAL:
+                    <span class="text-decoration-line-through text-white-50">₱589</span>
+                    <span class="price-modal">₱500.65</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0">
+                <label for="email-500" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-500"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-500" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-500" id="Gcash-500"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-500">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-500" id="Card-500"
+                      value="Card">
+                    <label class="form-check-label" for="Card-500">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-500" id="Paypal-500"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-500">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-500" id="Grabpay-500"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-500">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-500" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal" onclick="validateForm('500')">Complete
+            Order</button>
+        </div>
       </div>
     </div>
-    <div class="d-flex flex-column flex-sm-row justify-content-between mx-5 copyright">
-      <p>&copy; No copyright infringement intended. All images, characters, and elements used are the properties
-        of Pokémon GO, Niantic, The Pokémon Company, and Nintendo. This content is created for school purposes
-        only..</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3 pt-4"><a class="link-body-emphasis" href="#"><img
-              src="https://i.postimg.cc/MGX6CRL4/Pokemon.png" alt=""></a>
-        </li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="https://i.postimg.cc/52s9KpsL/Niantic.png"
-              alt=""></a></li>
+  </div>
 
-      </ul>
+  <!-- Modal 4 -->
+  <div class="modal fade modal-xl" id="buynow-994" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal">
+              <div class="mt-5 mb-5 ms-3 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-6 fw-semibold text-white fst-italic">
+                    <span class="price-modal">5, 600</span>
+                    PokéCoins
+                  </h4>
+                  <p class="description-item-modal">
+                    400 WEB STORE BONUS COINS
+                    <br>5, 200 + 400 Web Store Bonus = 5, 600 total PokéCoins
+                  </p>
+                  <h4 class="fs-4 fw-semibold text-white">
+                    TOTAL:
+                    <span class="text-decoration-line-through text-white-50">₱1, 170</span>
+                    <span class="price-modal">₱994.50</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0">
+                <label for="email-994" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-994"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-994" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-994" id="Gcash-994"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-245">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-994" id="Card-994"
+                      value="Card">
+                    <label class="form-check-label" for="Card-994">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-994" id="Paypal-994"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-994">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-994" id="Grabpay-994"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-994">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-994" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal" onclick="validateForm('994')">Complete
+            Order</button>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade modal-xl" id="buynow-2950" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal">
+              <div class="mt-5 mb-5 ms-1 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-6 fw-semibold text-white fst-italic">
+                    <span class="price-modal">15, 500</span>
+                    PokéCoins
+                  </h4>
+                  <p class="description-item-modal">
+                    1000 WEB STORE BONUS COINS
+                    <br>14, 500 + 1, 000 Web Store Bonus = 15, 500 total PokéCoins
+                  </p>
+                  <h4 class="fs-4 fw-semibold text-white">
+                    TOTAL:
+                    <span class="text-decoration-line-through text-white-50">₱2, 950</span>
+                    <span class="price-modal">₱2, 507.50</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0">
+                <label for="email-2950" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-2950"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-2950" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-2950" id="Gcash-2950"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-2950">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-2950" id="Card-2950"
+                      value="Card">
+                    <label class="form-check-label" for="Card-2950">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-2950" id="Paypal-2950"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-2950">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-2950" id="Grabpay-2950"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-2950">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-2950" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal" onclick="validateForm('2950')">Complete
+            Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- daily bundles -->
+  <!-- modal 6 -->
+  <div class="modal fade modal-xl" id="buynow-100" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal-dailybundles">
+              <div class="mt-5 mb-5 ms-1 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-1 fw-semibold text-white fst-italic">
+                    <span class="price-modal-dailybundles">Boost Box</span>
+                  </h4>
+                  <div>
+                    <span class="description-item-modal fs-6">
+                      <img src="ShopImages/pokeballs.png" alt="Pokeballs" class="coin">
+                      <span class="fw-semibold text-white">x20 Poké Ball
+                      </span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="description-item-modal fs-6">
+                      <img src="ShopImages/luckyegg.png" alt="Lucky Egg" class="coin">
+                      <span class="fw-semibold text-white">1x Lucky Egg
+                      </span>
+                  </div>
+                  <div class="fs-4 fw-semibold text-white">
+                    <img
+                      src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
+                      alt="pokecoins" class="coin-modal">
+                    <span class="align-middle price-modal-dailybundles">100</span>
+                  </div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0 mt-5">
+                <label for="email-100" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-100"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-100" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-100" id="Gcash-100"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-100">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-100" id="Card-100"
+                      value="Card">
+                    <label class="form-check-label" for="Card-100">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-100" id="Paypal-100"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-100">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-100" id="Grabpay-100"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-100">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-100" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal-dailybundles"
+            onclick="validateForm('100')">Complete Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 7 -->
+  <div class="modal fade modal-xl" id="buynow-425" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal-dailybundles">
+              <div class="mt-5 mb-5 ms-1 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-1 fw-semibold text-white fst-italic">
+                    <span class="price-modal-dailybundles">Great Raid Box</span>
+                  </h4>
+                  <div>
+                    <img src="ShopImages/battlepass.png" alt="Premium Battle Pass" class="coin">
+                    <span class="fw-semibold text-white">x2 Premium Battle Pass
+                    </span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="description-item-modal fs-6">
+                      <img src="ShopImages/remoteraidpass.png" alt="Remote Raid Pass" class="coin">
+                      <span class="fw-semibold text-white">2x Remote Raid Pass
+                      </span>
+                  </div>
+                  <div class="fs-4 fw-semibold text-white">
+                    <img
+                      src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
+                      alt="pokecoins" class="coin-modal">
+                    <span class="align-middle price-modal-dailybundles">425</span>
+                  </div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0 mt-5">
+                <label for="email-425" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-425"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-425" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-425" id="Gcash-425"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-425">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-425" id="Card-425"
+                      value="Card">
+                    <label class="form-check-label" for="Card-425">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-425" id="Paypal-425"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-425">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-425" id="Grabpay-425"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-425">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-425" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal-dailybundles"
+            onclick="validateForm('425')">Complete Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 7 -->
+  <div class="modal fade modal-xl" id="buynow-1730" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Payment Process</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 selected-item-modal-dailybundles">
+              <div class="mt-5 mb-5 ms-1 text-white fst-italic">
+                <div class="ms-4">
+                  <h4 class="fs-1 fw-semibold text-white fst-italic">
+                    <span class="price-modal-dailybundles">Voyager Box</span>
+                  </h4>
+                  <div>
+                    <img src="ShopImages/Incense.png" alt="Incense" class="coin">
+                    <span class="fw-semibold text-white">x2 Incense
+                    </span>
+                  </div>
+                  <div>
+                    <span class="description-item-modal fs-6">
+                      <img src="ShopImages/remoteraidpass.png" alt="Remote Raid Pass" class="coin">
+                      <span class="fw-semibold text-white">2x Remote Raid Pass
+                      </span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="description-item-modal fs-6">
+                      <img src="ShopImages/EggIncubator.png" alt="Egg Incubator" class="coin">
+                      <span class="fw-semibold text-white">x8 Incubator
+                      </span>
+                  </div>
+                  <div class="fs-4 fw-semibold text-white">
+                    <img
+                      src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16535833393431f4ca70ab0c93ebd83fccac1f4a16.png"
+                      alt="pokecoins" class="coin-modal">
+                    <span class="align-middle price-modal-dailybundles">1, 730</span>
+                  </div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="mb-0 mt-5">
+                <label for="email-1730" class="form-label">Billing Information</label>
+                <input type="text" class="form-control form-control-sm email" id="email-1730"
+                  placeholder="Email to get a receipt">
+                <div id="error-message-1730" class="error"></div>
+              </div>
+              <div class="form-check form-check-inline form-check-sm move-right description-item-modal mt-0">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Save this wallet for future payments</label>
+              </div>
+              <div class="mb-0">
+                <label for="PaymentMethod" class="form-label">Payment Method</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-1730" id="Gcash-1730"
+                      value="Gcash">
+                    <label class="form-check-label" for="Gcash-1730">Gcash</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-1730" id="Card-1730"
+                      value="Card">
+                    <label class="form-check-label" for="Card-1730">Card</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-1730" id="Paypal-1730"
+                      value="Paypal">
+                    <label class="form-check-label" for="Paypal-1730">PayPal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions-1730" id="Grabpay-1730"
+                      value="Grabpay">
+                    <label class="form-check-label" for="Grabpay-1730">GrabPay</label>
+                  </div>
+                </div>
+                <div id="payment-error-message-1730" class="error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn completeorder-button-modal-dailybundles"
+            onclick="validateForm('1730')">Complete Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="shop.js"></script>
 </body>
 

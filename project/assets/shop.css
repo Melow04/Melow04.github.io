@@ -193,6 +193,28 @@ button {
     background-color: #F1B72C;
 }
 
+.selected-item-modal-dailybundles {
+  background-color: #F1B72C;
+}
+
+.price-modal-dailybundles {
+  color: #158D73;
+}
+
+.completeorder-button-modal-dailybundles{
+  color: white;
+  background-color: #F1B72C;
+}
+
+.completeorder-button-modal-dailybundles:hover {
+  color: white;
+  background-color: #158D73;
+}
+
+.coin-modal {
+  height: 30px;
+}
+
 .error {
     color: red;
     font-size: 0.875em;
@@ -201,8 +223,12 @@ button {
 .border-red {
     border-color: red !important;
 }
+/* 
+.margin-bottom {
+  margin-bottom: 10px !important;
+} */
 
-
+/* NAVBAR */
 .navbar {
     background-color: #a2db95;
     color: #2f2f2f;
@@ -210,6 +236,10 @@ button {
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
     font-weight: 600;
+  }
+
+  .navbar-yellow-bg {
+    background-color: #F1B72C;
   }
   
   .navbar-pokemon {
