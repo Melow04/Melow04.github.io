@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(https://lh3.googleusercontent.com/4I4XB51OZpQL-JuSUcd8yrchFvAXJrK405d6CtVX9hXOqAC4vFTeuwFACbVzPSCOEeRtMHlLqA33rvlcnGb3FPTSfOuusljfWH9sf1U45Aaq=rw-e365-w1800?fbclid=IwZXh0bgNhZW0CMTEAAR2TxEu1BdliKQSKJLTE8DUXEILd7O09Y1yt_eS3iBUTdu9Q2OPxzRAKgq0_aem_F_cwhONFBFvMUgAJoElpJA);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
 .navbar {
   background-color: #a2db95;
   color: #2f2f2f;
@@ -27,14 +38,14 @@ li {
   color: white;
   font-weight: 700;
   padding: 10px;
-  text-shadow: 0 0 10px #00000048;
+  text-shadow: 0 0 10px #0000003b;
 }
 
 .web-store {
   text-decoration: none;
 }
 
-.active a {
+.active a{
   color: rgb(240, 234, 234);
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.377);
 }
@@ -42,7 +53,7 @@ li {
 .sign-in,
 .sign-up {
   margin-left: 10px;
-  border-radius: 30px;
+ border-radius: 30px;
 }
 
 .dropdown-toggle {
@@ -338,7 +349,7 @@ footer p {
 }
 
 #info-img-tops {
-  height: 307.5px;
+  height: 331.5px;
 }
 
 .card {
