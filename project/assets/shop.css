@@ -128,7 +128,7 @@ p {
     margin-left: 12px;
 }
 
-button {
+.addtocart, .buynow, .db-buynow, .dbadd {
     font-style: italic;
     border-radius: 20px;
     font-size: 15px;
@@ -223,10 +223,6 @@ button {
 .border-red {
     border-color: red !important;
 }
-/* 
-.margin-bottom {
-  margin-bottom: 10px !important;
-} */
 
 /* NAVBAR */
 .navbar {
@@ -275,7 +271,7 @@ button {
   .sign-in,
   .sign-up {
     margin-left: 10px;
-   border-radius: 30px;
+    border-radius: 30px;
   }
   
   .dropdown-toggle {
