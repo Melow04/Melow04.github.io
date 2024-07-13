@@ -32,6 +32,10 @@ function validated() {
         pass_error.style.display = "none";
     }
 
+    if (isValid) {
+        window.location.href = 'index.html'; 
+    }
+
     return isValid;
 }
 
