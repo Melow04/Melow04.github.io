@@ -334,9 +334,10 @@ p {
   
   .copyright p{
     font-size: 1rem;
+    font-weight: 400;
     margin-right: 5rem;
-  
   }
+
   @media (max-width: 575px) {
     .email-input{
       width: 25vh;
@@ -344,14 +345,11 @@ p {
     }
   }
   
-  
   @media (max-width: 768px) {
-  
-  
   .navbar-pokemon{
     padding-top: 1rem;
-    
   }
+
   #poke-logo{
     height: 4rem;
   }
@@ -405,4 +403,4 @@ p {
     font-size: 1rem;
     margin-top: 1rem;
   }
-}  
+}
