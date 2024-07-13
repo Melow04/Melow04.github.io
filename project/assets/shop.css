@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+   
+    background-color: #F1B72C;
+    border-radius: 0 0 20px 20px;
+    box-shadow: gray 0px 0px 30px -12px;
+}
+.second-in {
+    background-color: #158D73;
+}
+
+.third-in {
+    background-color: #F1B72C;
+}
+
+.pokemongofest {
+    height: 160px;
+}
+
+.shoppingcart {
+    padding-top: 10px;
+}
+
+.shoppingcarticon {
+    height: 20px;
+}
+
+.headerPokecoins {
+    height: 200px;
+}
+
+.box {
+    background-color: #158D73;
+    width: 17em;
+  
+
+    box-shadow: inset black 0px 0px 16px -12px;
+    border-radius: 50px;
+    transition: background-color 0.4s ease;
+}
+
+.box:hover {
+    background-color: #F1B72C;
+    box-shadow: outset black 0px 0px 50px -12px;
+
+    .buynow {
+        background-color: #158D73;
+    }
+}
+
+.box:hover .price {
+    color: #158D73;
+}
+
+.db-boxes {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+.dbbox {
+    background-color: #F1B72C;
+    width: 17em;
+
+    box-shadow: inset black 0px 0px 16px -12px;
+    border-radius: 50px;
+    
+    transition: background-color 0.4s ease;
+}
+
+.db-title-box {
+    color: #158D73;
+}
+
+.dbbox:hover {
+    background-color: #158D73;
+    box-shadow: outset black 0px 0px 50px -12px;
+
+    .db-title-box {
+        color: #F1B72C;
+    }
+
+    .db-buynow {
+        background: #F1B72C;
+    }
+}
+
+
+.db-buynow {
+    background-color: #158D73;
+    border: none;
+    font-weight: bold;
+ 
+    border: 2px solid #FFFFFF;
+    transition: background-color 0.4s ease;
+}
+
+.buttons {
+    font-size: 10px !important;
+}
+
+.db-text-box {
+    font-size: 11px;
+}
+
+.price {
+    color: #F1B72C;
+}
+
+h6 {
+    font-style: italic;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+
+p {
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.pokecoinsimg {
+    height: 5rem;
+    margin-left: 12px;
+}
+
+.addtocart, .buynow, .db-buynow, .dbadd {
+    font-style: italic;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.addtocart {
+    border: none;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+}
+
+.buynow {
+    border: none;
+    font-weight: bold;
+    background-color: #F1B72C;
+    border: 2px solid #FFFFFF;
+    transition: background-color 0.4s ease;
+}
+
+.buynow:active {
+    box-shadow: inset #F1B72C 0px 0px 40px -12px;
+}
+
+.dailybundles {
+    background-color: #F1B72C;
+    padding-bottom: 100px;
+    box-shadow: gray 0px 0px 30px -12px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.coin {
+    height: 20px;
+}
+
+.boostbox {
+    height: 100px;
+}
+
+.selected-item-modal{
+    background-color: #158D73;
+}
+
+.price-modal {
+    color: #F1B72C;
+}
+
+.description-item-modal {
+    font-size: 8px;
+}
+
+.completeorder-button-modal{
+    color: white;
+    background-color: #158D73;
+}
+
+.completeorder-button-modal:hover {
+    color: white;
+    background-color: #F1B72C;
+}
+
+.selected-item-modal-dailybundles {
+  background-color: #F1B72C;
+}
+
+.price-modal-dailybundles {
+  color: #158D73;
+}
+
+.completeorder-button-modal-dailybundles{
+  color: white;
+  background-color: #F1B72C;
+}
+
+.completeorder-button-modal-dailybundles:hover {
+  color: white;
+  background-color: #158D73;
+}
+
+.coin-modal {
+  height: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+}
+
+.border-red {
+    border-color: red !important;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #a2db95;
+    color: #2f2f2f;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+    font-weight: 600;
+  }
+
+  .navbar-yellow-bg {
+    background-color: #F1B72C;
+  }
+  
+  .navbar-pokemon {
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  li {
+    font-size: 20px;
+  }
+  
+  #poke-logo {
+    height: 7rem;
+  }
+  
+  .web-store h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    text-shadow: 0 0 10px #00000048;
+  }
+  
+  .web-store {
+    text-decoration: none;
+  }
+  
+  .active a{
+    color: rgb(240, 234, 234);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.377);
+  }
+  
+  .sign-in,
+  .sign-up {
+    margin-left: 10px;
+    border-radius: 30px;
+  }
+  
+  .dropdown-toggle {
+    background-color: transparent;
+    color: #2f2f2fd7;
+    font-size: 20px;
+    border: none;
+    justify-content: left;
+    border-bottom: 0;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 0;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #24ccaa;
+    color: white;
+  }
+  
+  /* header end */
+  
+  /* footer */
+  footer{
+  background: rgb(50,85,116);
+  background: linear-gradient(345deg, rgba(50,85,116,1) 0%, rgba(134,203,118,1) 165.78%);
+  border-radius: 3rem 3rem 0 0;
+  color: white;
+  }
+  
+  footer p{
+    font-weight: 600;
+    padding-left: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  
+  
+  
+  .email-input{
+    border-radius: 50px 0 0 50px;
+    padding-left: 1.5rem;
+    height: 3rem;
+  }
+  
+  .email-letter{
+    padding-left: 2rem;
+    position: relative;
+    margin-right: 2rem;
+  }
+  
+  .email-letter button{
+    border-radius: 0 50px 50px 0;
+    width: 5rem;
+    border: 1px solid white;
+    background-color: #2e0077;
+    color: white;
+    
+  }
+  
+  .copyright p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 5rem;
+  }
+
+  @media (max-width: 575px) {
+    .email-input{
+      width: 25vh;
+    
+    }
+  }
+  
+  @media (max-width: 768px) {
+  .navbar-pokemon{
+    padding-top: 1rem;
+  }
+
+  #poke-logo{
+    height: 4rem;
+  }
+  
+  .web-store h1{
+    font-size: 2rem;
+    padding: 0;
+  }
+  
+  .sign-in, .sign-up{
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    
+  }
+  
+  }
+  
+  @media (max-width: 1320px){
+  .navbar-pokemon{
+    padding-top: 1;
+  }
+  
+  #poke-logo{
+    height: 4rem;
+  
+  }
+  
+  .web-store{
+    font-size: 2rem;
+    padding: 0;
+  }
+  
+  /* .intro{
+    margin-left: 0px;
+  }
+  
+  .intro-text {
+    font-size: 2rem;
+  } */
+  
+  .shop, .feature {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  
+  .sign-in,
+  .sign-up{
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
