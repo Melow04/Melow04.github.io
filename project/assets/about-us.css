@@ -80,7 +80,17 @@ footer p {
   margin-top: 1rem;
 }
 
+.footer-links {
+  color: white;
+}
 
+.footer-links:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+  color: #F1B72C;
+  font-weight: 700;
+  text-shadow: 0 0 10px;
+}
 
 
 .email-input {
@@ -99,7 +109,7 @@ footer p {
   border-radius: 0 50px 50px 0;
   width: 5rem;
   border: 1px solid white;
-  background-color: #2e0077;
+  background-color: #0d6efd;
   color: white;
 
 }
