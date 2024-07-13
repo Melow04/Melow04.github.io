@@ -488,7 +488,7 @@ button[type="submit"]:hover {
 
     .logo {
         --bg-x: 7%;
-        --bg-y: 77%;
+        --bg-y: 80%;
         top: var(--bg-y);
         left: var(--bg-x);
         width: 140px;
