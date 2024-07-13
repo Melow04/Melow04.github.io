@@ -308,7 +308,17 @@ p {
     margin-top: 1rem;
   }
   
+  .footer-links{
+    color: white;
+  }
   
+  .footer-links:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+    color:#F1B72C ;
+    font-weight: 700;
+    text-shadow: 0 0 10px;
+  }
   
   
   .email-input{
