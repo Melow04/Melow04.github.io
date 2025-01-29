@@ -29,7 +29,7 @@ header {
   border-radius: 0.5rem;
 }
 
-img {
+.pics {
   border-radius: 1rem;
   height: 30vh;
   object-fit: cover;
@@ -104,6 +104,7 @@ i{
   justify-content: center;
 }
 .info {
+  
   display: flex;
   flex-direction: column;
   background-color: rgb(40, 40, 46);
@@ -112,6 +113,15 @@ i{
   padding: 1rem;
   justify-content: start;
   font-size: small;
+  margin-right: 1rem;
+  padding-top: 2rem;
+  
+}
+
+
+
+.queue-ar{
+  margin-top: 2.5rem;
   
 }
 
@@ -123,6 +133,7 @@ i{
   max-height: calc(100% - 2rem);
   border-radius: 0.5rem;
   padding: 1rem;
+  margin-right: 1.5rem;
 }
 
 .skill {
@@ -162,16 +173,16 @@ i{
 }
 
 button {
-
-  
- 
+  right: 10%;
+  position: absolute;
+  width: 20%;
   padding: 0.8rem 1.5rem;
   background-color: rgb(246, 120, 58);
   color: white;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 0.5rem;
+  border-radius:  0 0 0.5rem 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -181,36 +192,45 @@ button:hover {
 }
 
 .set1 {
+  transition: ease-in-out 0.5s;
   font-family: "Poppins", sans-serif;
   color: white;
 }
 
 .set2 {
+  transition: ease-in-out 0.5s;
   font-family: "Sour Gummy", sans-serif;
   color: white;
 }
 
 .set3 {
+  transition: ease-in-out 0.5s;
   font-family: "Averia Libre", sans-serif;
 }
 
 
 .skill.set2{
+  transition: ease-in-out 0.5s;
   background-color: rgb(104, 64, 131);
 }
 
 .skill.set3{
+  transition: ease-in-out 0.5s;
   background-color: rgb(75, 131, 64);
 }
 
 .info.set1, .rightsec.set1 {
+  transition: ease-in-out 0.5s;
   background-color: rgb(40, 40, 46);
+  
 }
 
 .info.set2, .rightsec.set2 {
+  transition: ease-in-out 0.5s;
   background-color: rgb(14, 26, 48);
 }
 
 .info.set3, .rightsec.set3 {
+  transition: ease-in-out 0.5s;
   background-color: rgb(72, 144, 150);
 }
