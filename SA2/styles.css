@@ -40,14 +40,19 @@
 }
 
 .box{
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border: solid 1rem;
     border-color: #cf1717;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.box {
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    position: relative;
 }
 
 #Monday{
