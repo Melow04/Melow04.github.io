@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSA 3</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="clearDisplay(); setLastClicked(this); rotateGradient()">C</button>
+            <button onclick="backspace(); setLastClicked(this); rotateGradient()">&lt;</button>
+            <button onclick="appendToDisplay('/'); setLastClicked(this); rotateGradient()">/</button>
+            <button onclick="appendToDisplay('*'); setLastClicked(this); rotateGradient()">x</button>
+            
+            <button onclick="appendToDisplay('7'); setLastClicked(this); rotateGradient()">7</button>
+            <button onclick="appendToDisplay('8'); setLastClicked(this); rotateGradient()">8</button>
+            <button onclick="appendToDisplay('9'); setLastClicked(this); rotateGradient()">9</button>
+            <button onclick="appendToDisplay('-'); setLastClicked(this); rotateGradient()">-</button>
+            
+            <button onclick="appendToDisplay('4'); setLastClicked(this); rotateGradient()">4</button>
+            <button onclick="appendToDisplay('5'); setLastClicked(this); rotateGradient()">5</button>
+            <button onclick="appendToDisplay('6'); setLastClicked(this); rotateGradient()">6</button>
+            <button onclick="appendToDisplay('+'); setLastClicked(this); rotateGradient()">+</button>
+            
+            <button onclick="appendToDisplay('1'); setLastClicked(this); rotateGradient()">1</button>
+            <button onclick="appendToDisplay('2'); setLastClicked(this); rotateGradient()">2</button>
+            <button onclick="appendToDisplay('3'); setLastClicked(this); rotateGradient()">3</button>
+            <button class="equals" onclick="calculate(); setLastClicked(this); rotateGradient()">=</button>
+            
+            <button class="zero" onclick="appendToDisplay('0'); setLastClicked(this); rotateGradient()">0</button>
+            <button onclick="appendToDisplay('.'); setLastClicked(this); rotateGradient()">.</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
