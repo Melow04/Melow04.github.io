@@ -10,59 +10,56 @@
 <body>
 
     <!-- Header Section -->
-    <div class="container1 container py-5">
-        <div class="row">
-            <div class="col-md-6 text-start">
-                <h3 class="">BEST OF MERIDEN</h3>
-                <h1>RESTAURANT GUIDE</h1>
-                <p>PRODUCED BY: LOCAL MAGAZINE</p>
+    <div class="container1 container py-5 text-center text-md-start">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3 class="bestof">BEST OF MERIDEN</h3>
+                <h1 class="rest">RESTAURANT GUIDE</h1>
+                <p class="parag">PRODUCED BY: LOCAL MAGAZINE</p>
             </div>
-            <div class="col-md-6 text-end p-4 ">
-                <button class="btn btn-warning close-bt menu
-                " onclick="closeDetails()">Main Menu</button>
+            <div class="col-md-6 text-md-end text-center mt-3 mt-md-0">
+                <button class="btn btn-warning close-bt" onclick="closeDetails()">Main Menu</button>
             </div>
         </div>
     </div>
-
-
-
 
     <!-- Restaurant Menu -->
     <div class="container">
         <div id="details-overlay" class="details-overlay">
-        <div class="details-card">
-            <div id="details-content"></div>
+            <div class="details-card">
+                <div id="details-content"></div>
+            </div>
         </div>
-    </div>
-        <div class="row g-5 nice">
-            <div class="col-md-3 ">
+
+        <div class="row g-4 nice">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="card restaurant-card" onclick="showDetails('gabel')">
                     <img src="assets/gabel.jpg" class="card-img-top" alt="Gabel Loffel">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">GABEL LOFFEL</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 ">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="card restaurant-card" onclick="showDetails('gary')">
                     <img src="assets/gary.jpg" class="card-img-top" alt="Gary Gari">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">GARY GARI</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 ">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="card restaurant-card" onclick="showDetails('ilpiatto')">
                     <img src="assets/ilpiatto.jpg" class="card-img-top" alt="Il Piatto">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">IL PIATTO</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 ">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="card restaurant-card" onclick="showDetails('pierre')">
                     <img src="assets/pierre.jpg" class="card-img-top" alt="Pierre Platters">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">PIERRE PLATTERS</h5>
                     </div>
                 </div>
@@ -70,10 +67,8 @@
         </div>
     </div>
 
-    <!-- Restaurant Details Section -->
-    
-
-<script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>

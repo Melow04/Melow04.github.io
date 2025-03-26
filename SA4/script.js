@@ -1,4 +1,4 @@
-const details = {
+var details = {
   gabel: {
     name: "GABEL LOFFEL",
     address: "123 Main St, Meriden City",
@@ -40,14 +40,14 @@ const details = {
 };
 
 function showDetails(restaurant) {
-  const content = document.getElementById("details-content");
-  const data = details[restaurant];
+  var content = document.getElementById("details-content");
+  var data = details[restaurant];
 
   content.innerHTML = `
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 pb-5">
     <h2 style="color: red;">${data.name}</h2>
-        <img src="${data.image}" style="height:50% ; border-radius: 10px;">
+        <img src="${data.image}" class="img-fluid" style="width:100%; max-height:25rem; border-radius:2rem;" />
     </div>
     <div class="col-6 py-3">
         <p><strong>Address:</strong> ${data.address}</p>
